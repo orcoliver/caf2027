@@ -1,0 +1,9 @@
+.env
+datos/
+*.fit
+.garminconnect/
+.venv/
+.garminconnect*/
+__pycache__/
+*.pyc
+files.zip

@@ -1,0 +1,23 @@
+# Bitácora de entrenamiento
+
+Registra cada análisis, versión del plan y ajuste, con fecha y motivo.
+
+| Fecha | Evento | Motivo / detalle |
+|-------|--------|------------------|
+| 2026-10-05 | Inicio del entrenamiento | Lunes de arranque del plan |
+| 2026-10-08 | /analisis-inicial | Datos Garmin descargados a datos/. Maratón 8-feb: 4:40:46 (positive split +36 s/km). VO2máx 48→41 y volumen ~20 km/sem tras parón jul–sep. Meta 6:10 evaluada como ambiciosa (~20–25 %). Perfil actualizado; pendientes 3 preguntas (parón, lesiones/fuerza, clima). |
+| 2026-10-08 | Respuestas del atleta | Parón por terremoto en Caracas (24-jun) y baja motivación; carpintería en ese tiempo. Equipo: mancuernas y bandas. Asfalto por la mañana, clima fresco, pista disponible. Edad 40, 1,69 m. Perfil completado; listo para /plan-completo. |
+| 2026-10-08 | Peso | Se usa 85 kg como provisional hasta que el atleta indique el peso real |
+| 2026-10-08 | Plan v1.0 generado | Plan de 17 semanas (pico 56 km/sem, tirada máx 32 km, taper de 3 sem), fuerza A/B con mancuernas y bandas. Fecha del maratón por confirmar: AIMS indica 21-feb-2027 (otras fuentes 7-feb); se mantiene 31-ene hasta la presentación del 15-oct. Enlaces MuscleWiki no verificables (403): solo referencia general. Pendiente confirmación del atleta y decisión de envío a Garmin. |
+| 2026-10-08 | Plan v1.0 confirmado | Oliver confirma el plan. Solicita también subir el plan al Forerunner 165 de su esposa (cuenta Garmin Connect aparte, tokens separados). Pendiente: datos y ritmos de ella. |
+| 2026-10-08 | Perfil Beatriz incorporado | Beatriz Gonzalez conectada (FR165). Misma planificación para correr juntos. Historial analizado: VO2máx 46, maratón previo a 140 lpm media. Meta 6:10 muy cómoda para ella. |
+| 2026-10-08 | Datos personales Beatriz | Edad: 44 años, Peso: 58,35 kg registrados en perfil.md |
+| 2026-10-08 | Subida a Garmin Connect | Entrenamiento 'S1D7 - Tirada Larga 10K Fácil' (2026-10-11) creado, agendado en calendario y enviado al FR55 de Oliver (ID 1723539623) y al FR165 de Beatriz (ID 1723539639). |
+| 2026-10-08 | Subida Fuerza a Garmin | Entrenamientos estructurados 'CAF - Fuerza A (Piernas y Glúteos)' y 'CAF - Fuerza B (Core y Estabilidad)' subidos y enviados a los relojes de Oliver (IDs 1723548953, 1723548962) y Beatriz (IDs 1723548970, 1723548974). |
+| 2026-10-08 | Calendario HTML y Enlaces MuscleWiki | Generado calendario interactivo en calendario.html con seguimiento interactivo, filtros por fase y tarjetas de fuerza integradas con enlaces verificados a MuscleWiki. plan.md actualizado. |
+| 2026-10-08 | Calendario interactivo con modales de detalle | Se implementó vista interactiva modal al hacer clic en cualquier sesión de entrenamiento. En las sesiones de fuerza se desglosan todos los ejercicios con descripción técnica, series/reps y botón directo a MuscleWiki. |
+| 2026-10-12 | /resumen-semanal Semana 1 | Semana 1 completada con 28.1 km por Oliver (plan 27.3 km) y 23.6 km por Beatriz. Tirada de 10.75 km realizada el domingo. Oliver durmió con el reloj (4 noches registradas: media 8.8h, FC reposo cayó a 48-50 lpm, VO2 sube a 42). Fuerza viernes omitida. Semana 2 confirmada (30 km). |
+| 2026-10-12 | Aclaratoria Tirada S1 Beatriz | Beatriz completó los 10,75 km completos junto a Oliver el domingo 11-oct; el FR 165 se apagó al km 6,41 por falta de batería. Ambos cumplieron el 100 % del volumen previsto. |
+| 2026-10-12 | Programación Semana 2 en Garmin | Semana 2 completa (Lun 4K, Mar 6K+strides, Mié 4K + Fuerza A, Jue 5K, Vie Fuerza B, Dom 11K) agendada en calendario y enviada a los relojes de Oliver (FR 55) y Beatriz (FR 165). Sábado libre respetado. |
+| 2026-10-14 | Plan v2.0 | Fecha oficial 21-feb-2027: plan extendido a 20 semanas (sem. 1–2 sin cambios). Tirada de 35 km el 31-ene (3 sem. antes) + 30 km el 17-ene, por el calambre del km 32 en 2026. Controles: 10K 29-nov, 21K 10-ene. Descargas 4/8/12/16. Sección anti-calambres añadida. Semana 2 a mitad: ambos al día en carrera; Oliver sin registro de Fuerza A el 14-oct. Pendiente: confirmar y reprogramar Garmin desde sem. 3. |
+| 2026-10-14 | Confirmación Plan v2.0 | Oliver aprueba el plan oficial de 20 semanas hacia el 21-feb-2027 con tirada máx. de 35 km. Calendario.html actualizado a v2 (846.3 km totales, 20 semanas, tracking actualizado). No se sube nada a Garmin por ahora; se programará tras el resumen semanal cada domingo. |
