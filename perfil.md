@@ -21,7 +21,13 @@
 - Predicciones actuales Garmin: 5K 24:41 · 10K 52:44 · 21K 2:01:21 · 42K 4:31:54.
 - Conclusión: Su capacidad aeróbica y economía son notablemente superiores; el ritmo 6:10 min/km es para ella muy cómodo y accesible (zona 2 alta / zona 3 baja). Será la liebre/ancla ideal en carrera.
 - Años corriendo: [completar]
-- Maratón del 8 de febrero de 2026 ("Bolivariano Libertador Carrera"): **4:40:46** (42,65 km, 6:34/km reloj; ~6:24 en movimiento), FC media 158 / máx 174, +640 m de desnivel. Parciales: 1ª mitad 6:16/km, 2ª mitad 6:52/km (positive split ≈ +36 s/km); se desmorona desde el km ~27 (7:14–8:01/km en km 29–38). 99 % del tiempo en zonas 3–4.
+- Maratón del 8 de febrero de 2026 ("Bolivariano Libertador Carrera"): **4:40:36 chip / 4:40:46 GPS** para 42,65 km. Tiempo en movimiento 4:33:13 (6:24/km). FC media 158 / máx 174. Desnivel medido por el reloj +640/−642 m (el FR55 no tiene barómetro; la cifra oficial de la ruta es ~258 m).
+  - **Salida correcta:** km 1–5 en 32:50 (6:34/km; km 1 a 6:53, km 2 a 6:41, km 3 a 6:41).
+  - **Sin muro antes del km 30:** ritmo estable ~6:17/km hasta el **km 30,22 (3:10:06)**, solo 4,3 s detenido en 3 horas, cadencia 160–162 ppm.
+  - **Calambre:** desde el km 30,2, **solo muslo derecho** (ambas caras, más intenso en la interna: vasto medial y aductores). **Pantorrillas sin afectación.** Se soltó en pocos días sin dolor residual → **calambre asociado al ejercicio por fatiga neuromuscular (EAMC)**, no rotura ni fallo sistémico de electrolitos.
+  - **Causa raíz:** (1) daño excéntrico en bajadas de los km 10–25 (−417 m antes del km 30; km 10–15 con −110 m a 6:00–6:06 y zancada 1,03 m; km 20–25 con −78 m a 6:11–6:13; FC de 152 a 163, pico 174); (2) gatillo en las subidas de los km 30–35 (+116 m).
+  - **Final:** 7:29 detenido después del km 30,2 para estirar; en movimiento 6:42/km los últimos 12,4 km; últimos 200 m a 6:02 y 166 ppm.
+  - **Corrección:** el análisis inicial ("positive split", "salida rápida", "se desmorona desde el km 27") era erróneo; se confundió número de vuelta con número de km.
 - Marcas recientes (estimadas de actividades, no confirmadas como carrera): ~16 km a 5:24/km (4-abr-2026, FC 161); ~9,9 km a 5:07/km (14-jun-2026, FC 168 → 10K ≈ 51–52 min). 21K y 5K: [completar].
 - Predicciones Garmin hoy (2026-10-08): 5K 27:14 · 10K 1:00:16 · 21K 2:25:36 · **42K 5:43:36**. Reflejan el parón reciente.
 
@@ -35,7 +41,7 @@
 - Ritmo fácil actual: 7:20–7:30/km a FC 139–148.
 
 ## Salud y logística
-- Lesiones: ninguna reportada. El parón (28-jul → 6-sep) coincide con el terremoto de Caracas del 24-jun-2026: baja motivación y trabajos de carpintería (carga física distinta, no running). Reinicio gradual desde sep.
+- Lesiones: ninguna activa. Antecedente: calambre EAMC en muslo derecho (vasto medial + aductores) en el km 30,2 del maratón de 2026; prioridad de fuerza excéntrica de cuádriceps y de aductores. El parón (28-jul → 6-sep) coincide con el terremoto de Caracas del 24-jun-2026: baja motivación y trabajos de carpintería (carga física distinta, no running). Reinicio gradual desde sep.
 - Equipo de fuerza: mancuernas y bandas elásticas (en casa)
 - Terreno y clima: Caracas, entrena en las mañanas sobre asfalto; clima fresco. Puede hacer series en pista cuando haga falta.
 - Restricción fija: **sábado sin entrenamiento**

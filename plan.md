@@ -1,15 +1,16 @@
 # Plan de entrenamiento: Maratón CAF (21 de febrero de 2027)
 
-**Versión 2.0 · 2026-10-14 (fecha oficial 21-feb-2027; 20 semanas; tirada máx. 35 km).** Meta: 6:10 min/km → ≈ 4:20:12. Inicio: lunes 5 de octubre de 2026. **Sábado siempre libre.**
+**Versión 2.1 · 2026-10-15 (fecha oficial 21-feb-2027; 20 semanas; tirada máx. 35 km).** Meta: 6:10 min/km → ≈ 4:20:12. Inicio: lunes 5 de octubre de 2026. **Sábado siempre libre.**
 
 > [!NOTE]
-> **Fecha oficial: domingo 21 de febrero de 2027.** v2.0 extiende el plan de 17 a 20 semanas. Semanas 1–2 sin cambios. Se añade una tirada de **35 km** (31-ene) por el calambre del km 32 en 2026.
+> **Fecha oficial: domingo 21 de febrero de 2027.** 20 semanas (5-oct-2026 → 21-feb-2027).
+> **v2.1 (15-oct-2026):** ajuste biomecánico y anti-calambres del muslo derecho a partir de la telemetría completa del maratón de 2026: fuerza excéntrica de cuádriceps y aductores, técnica de bajada en tiradas largas, cuestas en fatiga, semana 18 más segura y estrategia con techo de FC y micro-pausas.
 
 ## Evaluación de la meta
 - Tiempo estimado hoy (Garmin): **5:43:36**, reflejo del parón (VO2 máx 41).
 - Proyección si cumples el plan: **4:25–4:40**; mejor estimación central ≈ **4:32 (6:27/km)**.
 - Probabilidad de 6:10/km: **≈ 20–25 %** → meta **ambiciosa**.
-- Objetivos: **A** 4:20–4:25 · **B** 4:30–4:35 (realista) · **C** < 4:45 (mejorar el 4:40:46 con final fuerte).
+- Objetivos: **A** 4:20–4:25 · **B** 4:30–4:35 (realista) · **C** < 4:40 (mejorar el 4:40:36 chip con un final sin calambres).
 - Se recalcula tras el control 10K (sem. 8) y el 21K (sem. 14): 21K en ≤ 2:08 (6:05/km) sostiene A; ≤ 2:13 sostiene B.
 
 ## Leyenda y zonas (provisionales; recalibrar sem. 8)
@@ -22,6 +23,10 @@
 | Umbral | Tempo | 5:45 (5:35–5:50) | 158–168 (Z4) | Subir umbral de lactato |
 | Pista/Intervalos | Series | 5:05–5:20 | 168–175 (Z5) | VO2 máx y economía |
 | Strides | 20" progresivos | ~5:15, rec 60" caminando | — | Técnica y reclutamiento |
+
+**Directrices obligatorias en tiradas largas (L) desde la semana 6:**
+- **Bajadas:** prohibido alargar la zancada por encima de **0,98 m** o acelerar por debajo de **6:05/km**. Cadencia **162–165 ppm**, aterrizaje suave bajo el centro de masa para ahorrar cuádriceps. (En 2026 las bajadas de los km 10–15 se corrieron a 6:00–6:06 con zancada de 1,03 m.)
+- **Cuestas en fatiga (sem. 9, 11, 13, 15 y 17):** incluir repechos deliberados en el último tercio de la tirada para replicar el tramo km 30–40 de Caracas (+208 m medidos por el reloj en 2026).
 
 **Calentamiento/enfriamiento** (sesiones de calidad): 2 km fácil + movilidad dinámica (5') + 4 strides; luego 1,5 km fácil + estiramientos suaves. En tirada larga: primeros 2 km muy suaves.
 **Estructura semanal:** Lun F · Mar calidad · Mié F + Fuerza A · Jue calidad media/MP · Vie Fuerza B (sin correr) · **Sáb libre** · Dom larga.
@@ -160,7 +165,7 @@ _Primeros km a ritmo de maratón en tirada larga._
 | Jue | 3 dic | MP 4 km @6:10 dentro de 7 |
 | Vie | 4 dic | Fuerza B |
 | Sáb | 5 dic | **Libre (no se entrena)** |
-| Dom | 6 dic | L 18: 11 F + 4 @6:10 + 3 F |
+| Dom | 6 dic | L 18: 11 F + 4 @6:10 + 3 F · cuestas en el último tercio |
 
 
 ### Semana 10 · Desarrollo · 7 dic – 13 dic · **46 km**
@@ -186,7 +191,7 @@ _Primeros km a ritmo de maratón en tirada larga._
 | Jue | 17 dic | MP 5 km @6:10 dentro de 8 |
 | Vie | 18 dic | Fuerza B |
 | Sáb | 19 dic | **Libre (no se entrena)** |
-| Dom | 20 dic | L 22: 10 F + 8 @6:10 + 4 F |
+| Dom | 20 dic | L 22: 10 F + 8 @6:10 + 4 F · cuestas en el último tercio |
 
 
 ### Semana 12 · Específica · DESCARGA · 21 dic – 27 dic · **39 km**
@@ -216,7 +221,7 @@ _Año nuevo: tirada larga con bloques MP._
 | Jue | 31 dic | MP 5 km @6:10 dentro de 7 |
 | Vie | 1 ene | Fuerza B |
 | Sáb | 2 ene | **Libre (no se entrena)** |
-| Dom | 3 ene | L 26: 8 F + 2×6 @6:10 (2 km @6:50 entre) + 4 F |
+| Dom | 3 ene | L 26: 8 F + 2×6 @6:10 (2 km @6:50 entre) + 4 F · cuestas en el último tercio |
 
 
 ### Semana 14 · Específica · 4 ene – 10 ene · **46 km**
@@ -246,7 +251,7 @@ _Tirada larga de 30 km con 14 km a ritmo de maratón._
 | Jue | 14 ene | MP 4 km @6:10 dentro de 6 |
 | Vie | 15 ene | Fuerza B (mantenimiento) |
 | Sáb | 16 ene | **Libre (no se entrena)** |
-| Dom | 17 ene | L 30: 10 F + 14 @6:10 + 6 F |
+| Dom | 17 ene | L 30: 10 F + 14 @6:10 + 6 F · cuestas en el último tercio |
 
 
 ### Semana 16 · Específica · DESCARGA · 18 ene – 24 ene · **41 km**
@@ -276,22 +281,22 @@ _**Semana cumbre: tirada de 35 km** (3 semanas antes de la carrera). Simulacro c
 | Jue | 28 ene | F 7 + strides |
 | Vie | 29 ene | Fuerza B (mantenimiento) |
 | Sáb | 30 ene | **Libre (no se entrena)** |
-| Dom | 31 ene | L 35: 18 F + 12 @6:10 (km 19–30) + 5 F |
+| Dom | 31 ene | L 35: 18 F + 12 @6:10 (km 19–30) + 5 F · cuestas en el último tercio |
 
 
-### Semana 18 · Taper 1 · 1 feb – 7 feb · **49 km**
+### Semana 18 · Taper 1 · 1 feb – 7 feb · **45 km**
 
-_Volumen −20 %, intensidad se mantiene. 1 sesión de fuerza._
+_Volumen −25 %. Sin pista 48 h después de los 35 km: el martes es recuperación y el estímulo vivo pasa al jueves. 1 sesión de fuerza ligera._
 
 | Día | Fecha | Sesión |
 |---|---|---|
 | Lun | 1 feb | F 5 + Fuerza ligera |
-| Mar | 2 feb | Pista 4×1000 m @5:15 rec 2' (9) |
+| Mar | 2 feb | F 6 + 4 strides suaves (solo si no hay fatiga en muslos) |
 | Mié | 3 feb | F 4 |
-| Jue | 4 feb | MP 4 km @6:10 dentro de 7 |
+| Jue | 4 feb | Controlado 8: 3 F + 3 km @6:00–6:10 + 2 F |
 | Vie | 5 feb | Descanso/movilidad |
 | Sáb | 6 feb | **Libre (no se entrena)** |
-| Dom | 7 feb | L 24: 8 F + 12 @6:10 + 4 F |
+| Dom | 7 feb | L 22: 12 F + 6 @6:10 + 4 F |
 
 
 ### Semana 19 · Taper 2 · 8 feb – 14 feb · **36 km**
@@ -344,14 +349,15 @@ _Descanso total el sábado. Sin sorpresas: cena y desayuno ya probados._
 | 15 | 11 ene | 55 | Específica | +20 % |
 | 16 | 18 ene | 41 | Específica · DESCARGA | -25 % |
 | 17 | 25 ene | 60 | Pico | +46 % |
-| 18 | 1 feb | 49 | Taper 1 | -18 % |
-| 19 | 8 feb | 36 | Taper 2 | -27 % |
+| 18 | 1 feb | 45 | Taper 1 | -25 % |
+| 19 | 8 feb | 36 | Taper 2 | -20 % |
 | 20 | 15 feb | 61.2 | Semana de carrera | +70 % |
 
 Descargas: semanas 4, 8, 12 y 16. Tras cada descarga el aumento es ≤ 10 % frente a la última semana de carga plena (el % de la tabla es contra la semana inmediata). Taper: semanas 18–20; la tirada de 35 km cae 3 semanas antes de la carrera.
 
 ## Fuerza (2 sesiones/semana; 1 en el taper)
-Equipo: mancuernas y bandas. **Mié = Fuerza A** (≥24 h después de la calidad del martes); **Vie = Fuerza B** (ligera, sin correr). Si la calidad del jueves queda comprometida, baja a 2 series en A.
+Equipo: mancuernas, bandas y un escalón o banco. **Mié = Fuerza A** (≥24 h después de la calidad del martes); **Vie = Fuerza B** (sin correr). Si la calidad del jueves queda comprometida, baja a 2 series en A.
+**Enfoque v2.1:** el calambre de 2026 fue en el **muslo derecho** (vasto medial y aductores), no en la pantorrilla. Por eso entran el control excéntrico del cuádriceps (bajadas) y la fuerza de aductores. El trabajo unilateral empieza siempre por la pierna más débil.
 
 | Fase | Semanas | Series × reps | Carga | Descanso |
 |---|---|---|---|---|
@@ -360,29 +366,27 @@ Equipo: mancuernas y bandas. **Mié = Fuerza A** (≥24 h después de la calidad
 | Mantenimiento | 15–17 | 2 × 6–8 | RPE 7 | 90 s |
 | Taper | 18–20 | 1 sesión ligera, 2 × 8 | RPE 5–6 | 60 s |
 
-### Fuerza A (piernas y glúteos)
-| Ejercicio | Series × reps | Nota técnica | Alternativa |
-|---|---|---|---|
-| Sentadilla goblet (mancuerna) | 3 × 10 | Espalda neutra, rodillas alineadas con los pies | Sentadilla a una silla con banda |
-| Peso muerto rumano con mancuernas | 3 × 8–10 | Cadera atrás, rodillas semiflexionadas; sentir isquios | A una pierna sin carga |
-| Zancada inversa → sentadilla búlgara (desde sem. 6) | 3 × 8 c/pierna | Torso erguido, paso largo | Zancada estática |
-| Puente de glúteos con mancuerna | 3 × 12 | Pausa 1 s arriba, sin hiperextender lumbar | Con banda sobre rodillas |
-| Elevación de talones de pie (mancuerna) | 3 × 12–15 | Subida explosiva, bajada 3 s | A una pierna |
-| Elevación de talones sentado/rodilla flexionada (sóleo) | 3 × 15 | Sóleo es clave en maratón | — |
+### Fuerza A (Miércoles · piernas, cuádriceps excéntrico y glúteos)
+| # | Ejercicio | Series × reps | Nota técnica | Enlace |
+|---|---|---|---|---|
+| 1 | Sentadilla goblet con mancuerna | 3 × 10 | Bajada en 3 s; rodillas alineadas con los pies | [MuscleWiki](https://musclewiki.com/es-es/exercise/dumbbell-goblet-pulse-squat?model=f) |
+| 2 | Peso muerto rumano con mancuernas | 3 × 8–10 | Cadera atrás, rodillas semiflexionadas; foco en isquios | [MuscleWiki](https://musclewiki.com/es-es/exercise/dumbbell-romanian-deadlift?model=f) |
+| 3 | Zancada inversa → sentadilla búlgara unilateral | 3 × 8 por pierna | Empezar siempre por la pierna más débil; rodilla estable sobre el 2.º dedo | [MuscleWiki](https://musclewiki.com/es-es/exercise/dumbbell-split-squat?model=f) |
+| 4 | **NUEVO · Step-down excéntrico lento (bajada de escalón a una pierna)** | 3 × 8–10 por pierna | Bajar en 3–4 s tocando el suelo con el talón libre sin apoyar peso; la rodilla no colapsa hacia dentro. Blindaje del vasto medial para los −642 m de descenso | Pendiente: enlace directo no verificado ([MuscleWiki](https://musclewiki.com/es-es), buscar "step down") |
+| 5 | Elevación de talones de pie con mancuerna | 3 × 12–15 | Subida explosiva, bajada en 3 s (todo el trabajo de pantorrilla del miércoles) | [MuscleWiki](https://musclewiki.com/es-es/exercise/standing-calf-raise?model=f) |
 
-### Fuerza B (estabilidad, core y pantorrillas; ligera)
-| Ejercicio | Series × reps | Nota técnica | Alternativa |
-|---|---|---|---|
-| Step-up con mancuernas | 3 × 10 c/pierna | Banco o escalón bajo; sube con el talón | Sin carga |
-| Caminata lateral con banda | 3 × 12 pasos c/lado | Banda sobre rodillas, pies paralelos | Clamshell con banda |
-| Plancha frontal | 3 × 30–45 s | Pelvis neutra | Rodillas apoyadas |
-| Plancha lateral | 3 × 20–30 s c/lado | Cuerpo en línea | Con rodilla inferior apoyada |
-| Bird-dog | 3 × 8 c/lado | Sin rotar la cadera | Dead bug |
-| Elevación de talones a una pierna | 2 × 10 | Control y rango completo | Dos pies |
-| Pliometría ligera (desde sem. 8): pogos / skipping | 3 × 20 s | Contactos cortos, sin dolor | Omitir |
+### Fuerza B (Viernes · aductores, estabilidad de cadera y core)
+| # | Ejercicio | Series × reps | Nota técnica | Enlace |
+|---|---|---|---|---|
+| 1 | **NUEVO · Puente de Copenhague** (alternativa: puente de glúteos con compresión isométrica de aductores) | 3 × 20–30 s por lado (o 3 × 12 apretando un cojín/pelota entre las rodillas) | Empezar con la rodilla de arriba apoyada en el banco (palanca corta); progresar al pie. Blindaje directo del aductor derecho | Pendiente: enlace directo no verificado ([MuscleWiki](https://musclewiki.com/es-es), buscar "copenhagen") |
+| 2 | Caminata lateral con banda elástica | 3 × 12 pasos por lado | Banda sobre rodillas; glúteo medio | [MuscleWiki](https://musclewiki.com/es-es/exercise/side-walks-resisted?model=f) |
+| 3 | Plancha frontal de antebrazos | 3 × 35–45 s | Pelvis neutra, glúteos apretados | [MuscleWiki](https://musclewiki.com/es-es/exercise/forearm-plank?model=f) |
+| 4 | Dead bug / bicho muerto | 3 × 10 por lado | Lumbar pegada al suelo | [MuscleWiki](https://musclewiki.com/es-es/exercise/dead-bug?model=f) |
+| 5 | Elevación de talones sentado / rodilla flexionada (sóleo) | 3 × 15 | Mancuerna sobre la rodilla; rango completo y bajada lenta | Pendiente: enlace directo no verificado ([MuscleWiki](https://musclewiki.com/es-es), buscar "seated calf raise") |
 
 > [!NOTE]
-> **Enlaces:** referencia https://musclewiki.com/es-es — busca por el nombre del ejercicio (p. ej. "peso muerto rumano", "plancha lateral") y filtra por mancuernas, bandas o peso corporal. No incluyo URLs directas por ejercicio porque el sitio bloquea mi verificación automática (HTTP 403) y no quiero darte enlaces sin comprobar. Si prefieres, puedo añadirlos cuando me pases los que ya conozcas.
+> Los enlaces directos que pasaste están en uso. Para el step-down, el puente de Copenhague y la elevación de talones sentado no encontré una URL de MuscleWiki que pueda verificar (el sitio bloquea la comprobación automática), así que dejé la portada como referencia. Si me pasas esos tres enlaces, los añado.
+> Las rutinas "CAF - Fuerza A/B" que ya están en los relojes tienen la **versión anterior** de los ejercicios. Se actualizarán solo cuando lo confirmes.
 
 ## Movilidad y prevención (10 min, antes de correr o tras la fuerza)
 1. Círculos de cadera y balanceo de piernas (adelante/lateral): 10 c/lado.
@@ -394,31 +398,44 @@ Equipo: mancuernas y bandas. **Mié = Fuerza A** (≥24 h después de la calidad
 Señales de alarma (dolor que cambia el paso, hinchazón, dolor nocturno): detener la calidad y consultar a un profesional.
 
 ## Estrategia de carrera (Maratón CAF)
-Datos: ruta urbana certificada World Athletics/AIMS; ≈ **258 m** de ascenso y 242 m de descenso en 42K (soymaratonista.com); salidas matutinas ~5:50–6:05 a.m. (caf.com); horario 2027 por confirmar.
+Datos: ruta urbana certificada World Athletics/AIMS; ≈ **258 m** de ascenso y 242 m de descenso en 42K según soymaratonista.com. Tu reloj midió +640/−642 m en 2026; el Forerunner 55 no tiene altímetro barométrico, así que esa cifra probablemente está inflada, pero dónde están las bajadas y las subidas sí es fiable. Salidas matutinas ~5:50–6:05 a.m. (caf.com); horario 2027 por confirmar.
 
-| Tramo | Ritmo | Notas |
-|---|---|---|
-| Km 1–5 | 6:15–6:20 | Salir contenido (en febrero salí a ~6:16 y lo pagué) |
-| Km 6–30 | 6:10 | Estable; FC 150–158; subir un poco menos de esfuerzo en repechos |
-| Km 31–37 | 6:10–6:15 | Mantener forma, no apretar |
-| Km 38–42,2 | Lo que quede | Solo si la FC y las piernas responden |
+**Regla de oro km 10–25:** techo estricto de **FC < 156 lpm hasta el km 21** y **prohibido dejarse ir a 6:00/km en las bajadas** de la primera mitad. Beatriz (Forerunner 165, 133–144 lpm a este ritmo) actúa como ancla a **6:10–6:12/km**.
 
-Plan B (tiempo 4:30–4:35): 6:25–6:30 estable. Decide en el km 25 con FC y sensaciones.
-- **Hidratación:** 400–600 ml/h con sodio; beber en cada punto, a sorbos. En clima fresco, ajustar a sed.
-- **Carbohidratos:** 60 g/h (gel cada 25–30 min + bebida deportiva) empezando en el km 5; probar hasta 75–90 g/h en las tiradas largas si el estómago lo tolera.
+| Tramo | Ritmo | FC Oliver | Notas |
+|---|---|---|---|
+| Km 1–5 | 6:15–6:25 | < 150 | En 2026 saliste bien (32:50, 6:34/km de media); repítelo |
+| Km 6–10 | 6:10–6:12 | < 154 | Asentarse detrás del ancla |
+| Km 10–25 | 6:10–6:12 (bajadas ≥ 6:05) | **< 156 hasta el km 21** | Aquí se perdió la carrera en 2026: −188 m de bajada a 6:00–6:13 y FC de 152 a 163 (pico 174). Zancada ≤ 0,98 m, cadencia 162–165 |
+| Km 25–30 | 6:10–6:15 | ≤ 160 | Mantener, no recuperar tiempo |
+| Km 30–40 | 6:15–6:25 en subida | Por sensación | Tramo de subidas (+116 m entre los km 30 y 35). Acortar zancada y subir por esfuerzo, no por ritmo |
+| Km 40–42,2 | Lo que quede | — | Solo apretar si el muslo está libre |
+
+**Micro-pausas activas:** en 2026 corriste sin detenerte (4,3 s parado en 3 horas) hasta el km 30,2 y luego perdiste 7:29 parado por el calambre. En 2027: **15–20 s de caminata rápida controlada en cada puesto de hidratación cada 5 km desde el km 15** (km 15, 20, 25, 30, 35, 40) para tomar agua, gel o sales sin atragantarse. Son ~2 min en total, frente a los 7:29 de 2026, y descargan el cuádriceps antes de las subidas.
+
+Plan B (4:30–4:35): 6:25–6:30 estable. Decide en el km 25 con FC y sensaciones del muslo derecho.
+- **Hidratación:** 400–600 ml/h con sodio; beber en cada puesto durante la micro-pausa. En clima fresco, ajustar a sed.
+- **Carbohidratos:** 60 g/h (gel cada 25–30 min + bebida deportiva) desde el km 5; probar hasta 75–90 g/h en las tiradas largas si el estómago lo tolera.
 - **Calzado:** zapatillas ya usadas en ≥ 2 tiradas largas (> 20 km) y la ropa de carrera; no estrenar nada.
-- **Simulacros:** semanas 9–11 (bloques MP), **semana 13 (26 km)**, **semana 14 (21K)**, **semana 15 (30 km: 14 @6:10)** y **semana 17 (35 km: 12 @6:10 entre km 19–30)** con la nutrición, el calzado y el horario de la carrera (salida ~6 a.m.).
-- **Pre-carrera:** carga de carbohidratos 8–10 g/kg/día durante 36–48 h el viernes y sábado; desayuno 2–3 h antes; sin fibra excesiva.
-Los números de nutrición son pautas generales de la literatura deportiva (ACSM/IOC); pruébalas en entrenamiento y ajusta a tu tolerancia. No es consejo médico.
+- **Simulacros:** semanas 9–11 (bloques MP), **semana 13 (26 km)**, **semana 14 (21K)**, **semana 15 (30 km: 14 @6:10)** y **semana 17 (35 km: 12 @6:10 entre los km 19 y 30)**, con micro-pausas, nutrición, calzado y salida a las 6 a.m.
+- **Pre-carrera:** carga de carbohidratos 8–10 g/kg/día durante 36–48 h (viernes y sábado); desayuno 2–3 h antes; sin fibra excesiva.
+Los números de nutrición son pautas generales de la literatura deportiva (ACSM/IOC); pruébalos en entrenamiento y ajusta a tu tolerancia. No es consejo médico.
 
-## Prevención de calambres (aprendizaje del maratón 2026, km ~32)
-Los calambres en maratón se asocian sobre todo con **fatiga neuromuscular** (ir más rápido de lo entrenado, poco volumen de tiradas largas) y, en menor medida, con déficit de carbohidratos y sodio. Plan de acción:
-1. **Tiradas largas progresivas hasta 35 km** (sem. 17), con 30 km (sem. 15) y bloques MP en la segunda mitad para entrenar el tramo km 28–35.
-2. **Ritmo:** no salir por debajo de 6:15 los primeros 5 km (en 2026: 6:16 en la 1ª mitad y caída desde el km 27).
-3. **Carbohidratos:** 60–90 g/h desde el km 5, practicados en cada tirada ≥ 20 km.
-4. **Sodio:** probar 300–600 mg/h (cápsulas o bebida deportiva) en tiradas ≥ 26 km; anotar qué funciona.
-5. **Fuerza de pantorrillas/sóleo** cada semana (Fuerza A y B): resistencia a la fatiga del tríceps sural.
-6. Si un calambre aparece: bajar ritmo, caminar 1–2 min, estirar suave y retomar.
+## Prevención de calambres (diagnóstico del maratón 2026)
+**Qué pasó:** calambre severo desde el **km 30,2** solo en el **muslo derecho** (ambas caras, más intenso en la interna: vasto medial y aductores). Las pantorrillas no se afectaron. El muslo se soltó en pocos días sin dolor residual, lo que encaja con un **calambre asociado al ejercicio por fatiga neuromuscular (EAMC)** y no con una rotura ni con un fallo sistémico de electrolitos.
+**Por qué:** ritmo bien controlado hasta el km 30,22 (3:10:06, ~6:17/km, cadencia 160–162). La fatiga se generó antes:
+1. **Daño excéntrico en bajadas (km 10–25):** −417 m acumulados antes del km 30, con las bajadas de los km 10–15 (−110 m) corridas a 6:00–6:06 con zancada de 1,03 m y las de los km 20–25 (−78 m) a 6:11–6:13. La FC subió de 152 a 163 (pico de 174 cerca del km 25).
+2. **Gatillo en las subidas (km 30–35):** +116 m (vueltas de +42 y +40 m) con el cuádriceps fatigado sobrecargaron el vasto medial y los aductores derechos.
+3. **Coste real:** 7:29 detenido después del km 30,2, aunque en movimiento sostuviste 6:42/km los últimos 12,4 km y cerraste los últimos 200 m a 6:02 y 166 ppm.
+
+**Plan de acción:**
+1. **Fuerza excéntrica de cuádriceps** (step-down lento, goblet con bajada en 3 s) y **fuerza de aductores** (puente de Copenhague) cada semana.
+2. **Técnica de bajada** en todas las tiradas largas desde la semana 6 (zancada ≤ 0,98 m, ≥ 6:05/km, 162–165 ppm).
+3. **Cuestas en fatiga** en el último tercio de las tiradas de las semanas 9, 11, 13, 15 y 17.
+4. **Techo de FC < 156 hasta el km 21** y micro-pausas activas desde el km 15.
+5. **Tiradas largas progresivas hasta 35 km** (sem. 17) con bloques MP en la segunda mitad.
+6. Carbohidratos (60–90 g/h) y sodio (300–600 mg/h) practicados en tiradas ≥ 26 km. Ayudan, aunque no fueron la causa principal.
+7. Si aparece un calambre: bajar ritmo, caminar 1–2 min, estirar suave y retomar.
 Si los calambres se repiten fuera de la carrera o hay otros síntomas, consulta a un profesional de la salud.
 
 ## Carreras de control
