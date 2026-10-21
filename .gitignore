@@ -1,0 +1,18 @@
+# Ignorar todo por defecto en git
+*
+
+# Permitir unicamente archivos y carpetas web necesarios
+!index.html
+!calendario.html
+!.gitignore
+
+# Archivos de entorno y credenciales (redundancia de seguridad)
+.env
+datos/
+*.fit
+.garminconnect/
+.venv/
+.garminconnect*/
+__pycache__/
+*.pyc
+files.zip

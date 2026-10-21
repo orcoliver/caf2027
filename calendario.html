@@ -1,0 +1,2314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario Plan Maratón CAF 2027 | Oliver & Beatriz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --surface: #131b2e;
+      --surface-elevated: #1a243d;
+      --surface-hover: #223052;
+      --border: #222f4c;
+      --border-subtle: #19233a;
+      --primary: #38bdf8;
+      --primary-glow: rgba(56, 189, 248, 0.25);
+      --secondary: #818cf8;
+      --accent: #f43f5e;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      line-height: 1.5;
+      padding-bottom: 80px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(180deg, #162035 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 32px 24px 24px;
+    }
+    .header-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .title-group h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #fff 30%, var(--primary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .title-group p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-top: 4px;
+    }
+    .badge-pair {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    .kpi-bar {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .kpi-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 12px 18px;
+      border-radius: var(--radius-md);
+      min-width: 125px;
+    }
+    .kpi-card .val {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #fff;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .kpi-card .lbl {
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 24px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Navigation Tabs */
+    .nav-tabs {
+      display: flex;
+      gap: 12px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      overflow-x: auto;
+    }
+    .tab-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .tab-btn:hover {
+      background: var(--surface);
+      color: #fff;
+    }
+    .tab-btn.active {
+      background: var(--surface-elevated);
+      color: var(--primary);
+      border-color: var(--primary);
+      box-shadow: 0 0 15px var(--primary-glow);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 14px 18px;
+      border-radius: var(--radius-md);
+    }
+    .filter-group {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .filter-label {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      font-weight: 600;
+      margin-right: 4px;
+    }
+    .filter-chip {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-chip:hover {
+      border-color: var(--primary);
+      color: var(--text);
+    }
+    .filter-chip.active {
+      background: var(--primary);
+      color: #0b0f19;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+
+    .overall-progress {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .progress-track {
+      width: 140px;
+      height: 8px;
+      background: var(--surface-elevated);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--secondary), var(--primary));
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    /* Week Card */
+    /* Collapsible Week Cards */
+    .week-header {
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.15s ease;
+    }
+    .week-header:hover {
+      background: var(--surface-hover);
+    }
+    .toggle-icon {
+      font-size: 0.8rem;
+      color: var(--primary);
+      transition: transform 0.25s ease;
+      display: inline-block;
+    }
+    .week-card.collapsed .toggle-icon {
+      transform: rotate(-90deg);
+      color: var(--text-dim);
+    }
+    .week-card.collapsed .days-grid {
+      display: none;
+    }
+    .week-card.collapsed {
+      margin-bottom: 12px;
+      opacity: 0.9;
+    }
+    .week-card.is-current-week {
+      border-color: var(--primary);
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.15);
+    }
+
+    .week-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      margin-bottom: 24px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .week-card:hover {
+      border-color: #33446b;
+    }
+    .week-header {
+      padding: 16px 20px;
+      background: var(--surface-elevated);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .week-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .week-num {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .fase-badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 6px;
+      letter-spacing: 0.05em;
+    }
+    .fase-base { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
+    .fase-desarrollo { background: rgba(129, 140, 248, 0.15); color: #818cf8; border: 1px solid rgba(129, 140, 248, 0.3); }
+    .fase-especifica { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+    .fase-pico { background: rgba(244, 63, 94, 0.15); color: #f43f5e; border: 1px solid rgba(244, 63, 94, 0.3); }
+    .fase-taper { background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .descarga-pill {
+      background: rgba(245, 158, 11, 0.2);
+      color: #fbbf24;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+    }
+    .week-km {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    /* Days Grid */
+    .days-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      divide-x: 1px solid var(--border-subtle);
+    }
+    @media (max-width: 1100px) {
+      .days-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .days-grid { grid-template-columns: 1fr; }
+    }
+
+    .day-cell {
+      padding: 16px 14px;
+      border-right: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 175px;
+      transition: all 0.2s ease;
+      position: relative;
+      cursor: pointer;
+    }
+    .day-cell:last-child {
+      border-right: none;
+    }
+    .day-cell:hover {
+      background: var(--surface-hover);
+      transform: translateY(-2px);
+      box-shadow: inset 0 0 0 1px var(--primary);
+    }
+    .day-cell.is-rest {
+      background: rgba(11, 15, 25, 0.6);
+      cursor: default;
+    }
+    .day-cell.is-rest:hover {
+      transform: none;
+      box-shadow: none;
+    }
+    .day-cell.is-completed {
+      background: rgba(16, 185, 129, 0.05);
+    }
+
+    .day-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .day-name {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-dim);
+      text-transform: uppercase;
+    }
+    .day-date {
+      font-size: 0.8rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--text-muted);
+    }
+
+    .session-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+    .tag-easy { background: rgba(56, 189, 248, 0.15); color: #38bdf8; }
+    .tag-quality { background: rgba(129, 140, 248, 0.2); color: #a5b4fc; }
+    .tag-long { background: rgba(245, 158, 11, 0.2); color: #fcd34d; }
+    .tag-strength { background: rgba(236, 72, 153, 0.2); color: #f472b6; }
+    .tag-rest { background: rgba(100, 116, 139, 0.2); color: #94a3b8; }
+    .tag-race { background: rgba(244, 63, 94, 0.25); color: #fb7185; }
+
+    .session-content {
+      font-size: 0.88rem;
+      color: var(--text);
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+
+    .day-cell-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+      padding-top: 8px;
+    }
+    .info-hint {
+      font-size: 0.7rem;
+      color: var(--primary);
+      font-weight: 600;
+      opacity: 0.8;
+    }
+    .check-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 4px 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.2s;
+    }
+    .check-btn:hover {
+      border-color: var(--success);
+      color: var(--success);
+    }
+    .check-btn.checked {
+      background: var(--success);
+      color: #0b0f19;
+      border-color: var(--success);
+      font-weight: 700;
+    }
+
+    /* Modal Styling */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(7, 10, 19, 0.85);
+      backdrop-filter: blur(6px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+    }
+    .modal-overlay.active {
+      display: flex;
+    }
+    .modal-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 680px;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+      animation: modalIn 0.2s ease-out;
+    }
+    @keyframes modalIn {
+      from { transform: scale(0.96); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .modal-header {
+      padding: 20px 24px;
+      background: var(--surface-elevated);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .modal-title-group h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .modal-title-group p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .modal-close-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.5rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 4px;
+      transition: color 0.2s;
+    }
+    .modal-close-btn:hover {
+      color: #fff;
+    }
+    .modal-body {
+      padding: 24px;
+    }
+    .modal-section {
+      margin-bottom: 20px;
+    }
+    .modal-section-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    .modal-desc-box {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      font-size: 0.92rem;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .targets-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    @media (max-width: 500px) {
+      .targets-grid { grid-template-columns: 1fr; }
+    }
+    .target-card {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 12px;
+    }
+    .target-card .name {
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .target-card .val {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+      font-family: 'JetBrains Mono', monospace;
+      margin-top: 2px;
+    }
+    .target-card .sub {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* Strength items in modal */
+    .strength-item-modal {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      margin-bottom: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .strength-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .strength-item-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .strength-item-meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--primary);
+      font-weight: 600;
+    }
+    .strength-item-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+    .modal-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 6px;
+      align-self: flex-start;
+      margin-top: 4px;
+      transition: all 0.2s;
+    }
+    .modal-link-btn:hover {
+      background: var(--primary);
+      color: #0b0f19;
+    }
+
+    /* Strength View */
+    .strength-view { display: none; }
+    .strength-view.active { display: block; }
+
+    .workout-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .workout-box-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .workout-box-title h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .workout-box-title p {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+    }
+
+    .exercises-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 16px;
+    }
+    .exercise-card {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.15s, border-color 0.15s;
+    }
+    .exercise-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--primary);
+    }
+    .exercise-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .exercise-meta {
+      font-size: 0.85rem;
+      color: var(--primary);
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .exercise-note {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      flex-grow: 1;
+    }
+    .musclewiki-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      transition: all 0.2s;
+    }
+    .musclewiki-link:hover {
+      background: var(--primary);
+      color: #0b0f19;
+    }
+
+    .footer-notes {
+      margin-top: 40px;
+      padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="title-group">
+        <h1>Plan Maratón CAF 2027</h1>
+        <p>Periodización de 20 semanas · 5 oct 2026 ➔ 21 feb 2027 · Sábado siempre libre</p>
+        <div class="badge-pair">
+          <span>🏃‍♂️ Oliver (Forerunner 55)</span>
+          <span>•</span>
+          <span>🏃‍♀️ Beatriz (Forerunner 165)</span>
+          <span>•</span>
+          <span>Meta: 6:10 min/km (4:20:12)</span>
+        </div>
+      </div>
+
+      <div class="kpi-bar">
+        <div class="kpi-card">
+          <div class="val">923.5</div>
+          <div class="lbl">Km Totales</div>
+        </div>
+        <div class="kpi-card">
+          <div class="val" id="completedDays">3 / 102</div>
+          <div class="lbl">Completadas</div>
+        </div>
+        <div class="kpi-card">
+          <div class="val">35 km</div>
+          <div class="lbl">Tirada Máx.</div>
+        </div>
+        <div class="kpi-card">
+          <div class="val">6:10</div>
+          <div class="lbl">Ritmo Objetivo</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    
+    <!-- Navigation Tabs -->
+    <div class="nav-tabs">
+      <button class="tab-btn active" onclick="switchView('calendar')">
+        📅 Calendario 20 semanas (Haz clic en un día para ver detalles)
+      </button>
+      <button class="tab-btn" onclick="switchView('strength')">
+        💪 Ejercicios de Fuerza (MuscleWiki)
+      </button>
+      <button class="tab-btn" onclick="switchView('zones')">
+        🎯 Zonas de Ritmo y Estrategia
+      </button>
+    </div>
+
+    <!-- Calendar View -->
+    <div id="calendarView">
+      <div class="controls-bar">
+        <div class="filter-group">
+          <span class="filter-label">Fases:</span>
+          <button class="filter-chip active" onclick="filterPhase('all', this)">Todas</button>
+          <button class="filter-chip" onclick="filterPhase('Base', this)">Base</button>
+          <button class="filter-chip" onclick="filterPhase('Desarrollo', this)">Desarrollo</button>
+          <button class="filter-chip" onclick="filterPhase('Específica', this)">Específica</button>
+          <button class="filter-chip" onclick="filterPhase('Pico', this)">Pico</button>
+          <button class="filter-chip" onclick="filterPhase('Taper', this)">Taper</button>
+        </div>
+
+        <div class="overall-progress">
+          <span>Progreso: <strong id="progressPercent">2.9%</strong></span>
+          <div class="progress-track">
+            <div class="progress-fill" id="progressBar" style="width: 2.9%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="weeksContainer">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+
+    <!-- Strength View -->
+    <div id="strengthView" class="strength-view">
+      
+            <!-- Fuerza A -->
+      <div class="workout-box">
+        <div class="workout-box-header">
+          <div class="workout-box-title">
+            <h2>Rutina A: Piernas, Cuádriceps Excéntrico y Glúteos (Miércoles)</h2>
+            <p>Enfocada en control excéntrico de cuádriceps/vasto medial para bajadas, glúteos y fuerza unilateral · 3 series × 60s descanso</p>
+          </div>
+          <span class="fase-badge fase-base">v2.2 · Blindaje Vasto Medial</span>
+        </div>
+
+        <div class="exercises-grid">
+          
+          <div class="exercise-card">
+            <div>
+              <div class="exercise-name">1. Sentadilla Goblet con Mancuerna</div>
+              <div class="exercise-meta">3 × 10 reps (bajada en 3 s) · RPE 6–7</div>
+              <div class="exercise-note">Sostén una mancuerna vertical pegada al pecho. Pies al ancho de hombros. Espalda neutra, desciende la cadera controladamente en 3 s cuidando que las rodillas sigan la línea de los pies.</div>
+            </div>
+            <a href="https://musclewiki.com/es-es/exercise/dumbbell-goblet-pulse-squat?model=f" target="_blank" class="musclewiki-link">
+              Ver técnica en MuscleWiki ↗
+            </a>
+          </div>
+
+          <div class="exercise-card">
+            <div>
+              <div class="exercise-name">2. Peso Muerto Rumano con Mancuernas</div>
+              <div class="exercise-meta">3 × 8–10 reps · RPE 7</div>
+              <div class="exercise-note">Bisagra pura de cadera hacia atrás con rodillas semiflexionadas. Siente la tensión elástica en isquiotibiales sin curvar la espalda baja.</div>
+            </div>
+            <a href="https://musclewiki.com/es-es/exercise/dumbbell-romanian-deadlift?model=f" target="_blank" class="musclewiki-link">
+              Ver técnica en MuscleWiki ↗
+            </a>
+          </div>
+
+          <div class="exercise-card">
+            <div>
+              <div class="exercise-name">3. Zancada Inversa ➔ Sentadilla Búlgara Unilateral</div>
+              <div class="exercise-meta">3 × 8 reps c/pierna · RPE 7</div>
+              <div class="exercise-note">Inicia siempre con la pierna más débil. Torso erguido, empuje con talón delantero. Desde semana 6 eleva el pie trasero en banco (búlgara) con alineación estricta de rodilla.</div>
+            </div>
+            <a href="https://musclewiki.com/es-es/exercise/dumbbell-split-squat?model=f" target="_blank" class="musclewiki-link">
+              Ver técnica en MuscleWiki ↗
+            </a>
+          </div>
+
+          <div class="exercise-card">
+            <div>
+              <div class="exercise-name">4. Step-down Excéntrico Lento (Bajada de escalón a una pierna)</div>
+              <div class="exercise-meta">3 × 8–10 reps c/pierna (3–4 s bajada) · RPE 7</div>
+              <div class="exercise-note"><strong>NUEVO (Clave vasto medial y bajadas):</strong> Apoyo en un escalón, baja el pie opuesto en 3–4 s controlando que la rodilla no colapse hacia adentro. Blinda el muslo contra el daño de los -642m de bajada.</div>
+            </div>
+            <a href="https://musclewiki.com/es-es/exercise/bodyweight-step-down?model=f" target="_blank" class="musclewiki-link">
+              Ver técnica en MuscleWiki ↗
+            </a>
+          </div>
+
+          <div class="exercise-card">
+            <div>
+              <div class="exercise-name">5. Elevación de Talones de Pie con Mancuerna</div>
+              <div class="exercise-meta">3 × 12–15 reps · RPE 7</div>
+              <div class="exercise-note">Subida explosiva en 1 s y bajada lenta en 3 s. Rigidez del tendón de Aquiles y propulsión unificada en la sesión de piernas.</div>
+            </div>
+            <a href="https://musclewiki.com/es-es/exercise/standing-calf-raise?model=f" target="_blank" class="musclewiki-link">
+              Ver técnica en MuscleWiki ↗
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Fuerza B -->
+      <div class="workout-box">
+        <div class="workout-box-header">
+          <div class="workout-box-title">
+            <h2>Rutina B: Aductores, Estabilidad de Cadera y Core (Viernes)</h2>
+            <p>Blindaje directo para evitar el calambre del aductor en el km 30 · Sin fatiga de cuádriceps antes del descanso · 3 series × 45s descanso</p>
+          </div>
+          <span class="fase-badge fase-desarrollo">v2.2 · Blindaje Aductores</span>
+        </div>
+
+        <div class="exercises-grid">
+
+          <div class="exercise-card">
+            <div>
+              <div class="exercise-name">1. Puente de Copenhague / Glute Bridge con Compresión de Aductores</div>
+              <div class="exercise-meta">3 × 20–30 s por lado (o 12 reps con balón) · RPE 7</div>
+              <div class="exercise-note"><strong>NUEVO (Blindaje cara interna del muslo):</strong> Plancha lateral con pierna en banco (Copenhague) o puente de glúteos comprimiendo fuertemente un cojín/balón entre rodillas. Evita el espasmo de aductores en el km 30.</div>
+            </div>
+            <a href="https://musclewiki.com/es-es/exercise/adductor-leg-raise-side-lying-isometric?model=f" target="_blank" class="musclewiki-link">
+              Ver técnica en MuscleWiki ↗
+            </a>
+          </div>
+
+          <div class="exercise-card">
+            <div>
+              <div class="exercise-name">2. Caminata Lateral con Banda Elástica</div>
+              <div class="exercise-meta">3 × 12 pasos por lado · RPE 6</div>
+              <div class="exercise-note">Banda elástica sobre rodillas o tobillos. Pasos laterales en media sentadilla manteniendo tensión constante en glúteo medio para evitar el colapso medial de rodilla.</div>
+            </div>
+            <a href="https://musclewiki.com/es-es/exercise/side-walks-resisted?model=f" target="_blank" class="musclewiki-link">
+              Ver técnica en MuscleWiki ↗
+            </a>
+          </div>
+
+          <div class="exercise-card">
+            <div>
+              <div class="exercise-name">3. Plancha Frontal de Antebrazos</div>
+              <div class="exercise-meta">3 × 35–45 s · RPE 7</div>
+              <div class="exercise-note">Abdomen, glúteos y cuádriceps apretados. Cuello neutro. No dejes caer la zona lumbar ni levantes la cadera en exceso.</div>
+            </div>
+            <a href="https://musclewiki.com/es-es/exercise/forearm-plank?model=f" target="_blank" class="musclewiki-link">
+              Ver técnica en MuscleWiki ↗
+            </a>
+          </div>
+
+          <div class="exercise-card">
+            <div>
+              <div class="exercise-name">4. Dead Bug / Bicho Muerto</div>
+              <div class="exercise-meta">3 × 10 reps por lado · RPE 6</div>
+              <div class="exercise-note">Espalda baja pegada con firmeza al suelo sin arquear. Extiende brazo y pierna opuesta lentamente sin despegar la zona lumbar.</div>
+            </div>
+            <a href="https://musclewiki.com/es-es/exercise/dead-bug?model=f" target="_blank" class="musclewiki-link">
+              Ver técnica en MuscleWiki ↗
+            </a>
+          </div>
+
+          <div class="exercise-card">
+            <div>
+              <div class="exercise-name">5. Elevación de Talones Sentado / Rodilla Flexionada (Sóleo)</div>
+              <div class="exercise-meta">3 × 15 reps · RPE 7</div>
+              <div class="exercise-note">Sentado con rodilla a 90° y peso sobre muslos. Al flexionar la rodilla se aísla el sóleo, motor principal de absorción de impacto continuo en maratón.</div>
+            </div>
+            <a href="https://musclewiki.com/es-es/exercise/plantar-flexions-seated-resisted?model=f" target="_blank" class="musclewiki-link">
+              Ver técnica en MuscleWiki ↗
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Zones View -->
+    <div id="zonesView" class="strength-view">
+      <div class="workout-box">
+        <div class="workout-box-header">
+          <div class="workout-box-title">
+            <h2>Zonas de Entrenamiento y Referencias</h2>
+            <p>Calculadas a partir del test y marcas históricas · Recalibrar tras el 10K (Semana 8)</p>
+          </div>
+        </div>
+
+        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem;">
+          <thead>
+            <tr style="border-bottom: 2px solid var(--border); color: var(--text-dim);">
+              <th style="padding: 10px;">Zona</th>
+              <th style="padding: 10px;">Ritmo Objetivo</th>
+              <th style="padding: 10px;">FC Oliver (Forerunner 55)</th>
+              <th style="padding: 10px;">FC Beatriz (Forerunner 165)</th>
+              <th style="padding: 10px;">Propósito Principal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 12px 10px; font-weight: 700; color: #38bdf8;">Fácil / Regenerativo (F)</td>
+              <td style="padding: 12px 10px; font-family: 'JetBrains Mono';">7:00 – 7:30 min/km</td>
+              <td style="padding: 12px 10px;">125 – 145 lpm (Z2)</td>
+              <td style="padding: 12px 10px;">126 – 132 lpm (Z2)</td>
+              <td style="padding: 12px 10px; color: var(--text-muted);">Construcción de mitocondrias, base vascular, recuperación.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 12px 10px; font-weight: 700; color: #fbbf24;">Ritmo Maratón (MP)</td>
+              <td style="padding: 12px 10px; font-family: 'JetBrains Mono'; font-weight: 700; color: var(--primary);">6:10 min/km</td>
+              <td style="padding: 12px 10px;">150 – 158 lpm (Z3 alta)</td>
+              <td style="padding: 12px 10px;">133 – 144 lpm (Z3 baja)</td>
+              <td style="padding: 12px 10px; color: var(--text-muted);">Economía de carrera en meta, consumo eficiente de glucógeno.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 12px 10px; font-weight: 700; color: #818cf8;">Umbral Lactato / Tempo</td>
+              <td style="padding: 12px 10px; font-family: 'JetBrains Mono';">5:35 – 5:50 min/km</td>
+              <td style="padding: 12px 10px;">158 – 168 lpm (Z4)</td>
+              <td style="padding: 12px 10px;">149 – 160 lpm (Z4)</td>
+              <td style="padding: 12px 10px; color: var(--text-muted);">Elevar capacidad de aclaramiento de lactato.</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px 10px; font-weight: 700; color: #f43f5e;">Intervalos / Pista (VO2 máx)</td>
+              <td style="padding: 12px 10px; font-family: 'JetBrains Mono';">5:05 – 5:20 min/km</td>
+              <td style="padding: 12px 10px;">168 – 175 lpm (Z5)</td>
+              <td style="padding: 12px 10px;">162 – 172 lpm (Z5)</td>
+              <td style="padding: 12px 10px; color: var(--text-muted);">Potencia aeróbica máxima, cadencia y reclutamiento neuromuscular.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="footer-notes">
+      <p><strong>Nota importante sobre el calendario:</strong> Puedes hacer clic sobre cualquier día para ver la descripción detallada del entrenamiento, ritmos, descansos y los enlaces técnicos de fuerza a MuscleWiki. El progreso se guarda automáticamente en tu navegador.</p>
+    </div>
+
+  </div>
+
+  <!-- Detail Modal -->
+  <div class="modal-overlay" id="sessionModal" onclick="closeModalOnOverlay(event)">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3 id="modalSessionTitle">Detalle del Entrenamiento</h3>
+          <p id="modalSessionSubtitle">Semana 1 · Lunes 5 oct</p>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal()">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const planData = [
+      {
+        "num": 1,
+        "fase": "Base",
+        "fechas": "5 oct – 11 oct",
+        "km": 28.1,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "5 oct",
+            "sesion": "F 3,4 ✔"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "6 oct",
+            "sesion": "F 7,1 ✔"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "7 oct",
+            "sesion": "Descanso"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "8 oct",
+            "sesion": "F 6,8 ✔"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "9 oct",
+            "sesion": "Fuerza adaptación (omitida)"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "10 oct",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "11 oct",
+            "sesion": "L 10 fácil ✔"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "fase": "Base",
+        "fechas": "12 oct – 18 oct",
+        "km": 30.0,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "12 oct",
+            "sesion": "F 4"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "13 oct",
+            "sesion": "F 6 + 6×20\" strides"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "14 oct",
+            "sesion": "F 4 + Fuerza A"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "15 oct",
+            "sesion": "F 5"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "16 oct",
+            "sesion": "Fuerza B"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "17 oct",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "18 oct",
+            "sesion": "L 11 fácil"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "fase": "Base",
+        "fechas": "19 oct – 25 oct",
+        "km": 33.0,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "19 oct",
+            "sesion": "F 5"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "20 oct",
+            "sesion": "Fartlek 6×1' @5:30–5:40 / 1' trote (6)"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "21 oct",
+            "sesion": "F 4 + Fuerza A"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "22 oct",
+            "sesion": "F 6"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "23 oct",
+            "sesion": "Fuerza B"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "24 oct",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "25 oct",
+            "sesion": "L 12 fácil"
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "fase": "Base · DESCARGA",
+        "fechas": "26 oct – 1 nov",
+        "km": 29.0,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "26 oct",
+            "sesion": "F 4"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "27 oct",
+            "sesion": "F 6 + 6 strides"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "28 oct",
+            "sesion": "F 4 + Fuerza A"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "29 oct",
+            "sesion": "F 5"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "30 oct",
+            "sesion": "Fuerza B"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "31 oct",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "1 nov",
+            "sesion": "L 10 fácil"
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "fase": "Base",
+        "fechas": "2 nov – 8 nov",
+        "km": 36.0,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "2 nov",
+            "sesion": "F 5"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "3 nov",
+            "sesion": "Pista 6×400 m @5:10 rec 200 m trote (7)"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "4 nov",
+            "sesion": "F 4 + Fuerza A"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "5 nov",
+            "sesion": "Progresivo 7: 4 F + 3 @6:30"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "6 nov",
+            "sesion": "Fuerza B"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "7 nov",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "8 nov",
+            "sesion": "L 13 fácil"
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "fase": "Desarrollo",
+        "fechas": "9 nov – 15 nov",
+        "km": 38.0,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "9 nov",
+            "sesion": "F 5"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "10 nov",
+            "sesion": "Umbral 2×10' @5:45 rec 3' (8)"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "11 nov",
+            "sesion": "F 4 + Fuerza A"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "12 nov",
+            "sesion": "M 7 con 3 km @6:25"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "13 nov",
+            "sesion": "Fuerza B"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "14 nov",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "15 nov",
+            "sesion": "L 14 (últimos 2 km @6:30)"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "fase": "Desarrollo",
+        "fechas": "16 nov – 22 nov",
+        "km": 41.0,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "16 nov",
+            "sesion": "F 5"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "17 nov",
+            "sesion": "Pista 5×800 m @5:15 rec 400 m (9)"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "18 nov",
+            "sesion": "F 4 + Fuerza A"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "19 nov",
+            "sesion": "F 7 + 6 strides"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "20 nov",
+            "sesion": "Fuerza B"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "21 nov",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "22 nov",
+            "sesion": "L 16 fácil"
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "fase": "Desarrollo · DESCARGA",
+        "fechas": "23 nov – 29 nov",
+        "km": 33.0,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "23 nov",
+            "sesion": "F 4"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "24 nov",
+            "sesion": "F 6 + strides"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "25 nov",
+            "sesion": "F 4 + Fuerza A"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "26 nov",
+            "sesion": "F 5 + 4 strides"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "27 nov",
+            "sesion": "Fuerza B (ligera)"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "28 nov",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "29 nov",
+            "sesion": "**CARRERA 10K** (+ 4 km cal./enfr. = 14)"
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "fase": "Desarrollo",
+        "fechas": "30 nov – 6 dic",
+        "km": 44.0,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "30 nov",
+            "sesion": "F 5"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "1 dic",
+            "sesion": "Pista 6×1000 m @5:20 rec 2' (10)"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "2 dic",
+            "sesion": "F 4 + Fuerza A"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "3 dic",
+            "sesion": "MP 4 km @6:10 dentro de 7"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "4 dic",
+            "sesion": "Fuerza B"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "5 dic",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "6 dic",
+            "sesion": "L 18: 11 F + 4 @6:10 + 3 F · cuestas en el último tercio"
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "fase": "Desarrollo",
+        "fechas": "7 dic – 13 dic",
+        "km": 46.0,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "7 dic",
+            "sesion": "F 5"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "8 dic",
+            "sesion": "Umbral 3×10' @5:45 rec 2' (9)"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "9 dic",
+            "sesion": "F 4 + Fuerza A"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "10 dic",
+            "sesion": "MP 5 km @6:10 dentro de 8"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "11 dic",
+            "sesion": "Fuerza B"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "12 dic",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "13 dic",
+            "sesion": "L 20: 8 F + 2×4 @6:10 (1 km @7:00 entre) + 3 F"
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "fase": "Específica",
+        "fechas": "14 dic – 20 dic",
+        "km": 49.0,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "14 dic",
+            "sesion": "F 5"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "15 dic",
+            "sesion": "Pista 5×1200 m @5:20 rec 2' (10)"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "16 dic",
+            "sesion": "F 4 + Fuerza A"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "17 dic",
+            "sesion": "MP 5 km @6:10 dentro de 8"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "18 dic",
+            "sesion": "Fuerza B"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "19 dic",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "20 dic",
+            "sesion": "L 22: 10 F + 8 @6:10 + 4 F · cuestas en el último tercio"
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "fase": "Específica · DESCARGA",
+        "fechas": "21 dic – 27 dic",
+        "km": 39.0,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "21 dic",
+            "sesion": "F 4"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "22 dic",
+            "sesion": "F 7 + strides"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "23 dic",
+            "sesion": "F 4 + Fuerza A"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "24 dic",
+            "sesion": "M 6 con 3 km @6:25"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "25 dic",
+            "sesion": "Fuerza B"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "26 dic",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "27 dic",
+            "sesion": "L 18 estable ~6:50"
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "fase": "Específica",
+        "fechas": "28 dic – 3 ene",
+        "km": 52.0,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "28 dic",
+            "sesion": "F 5"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "29 dic",
+            "sesion": "Umbral 3×10' @5:45 rec 2' (10)"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "30 dic",
+            "sesion": "F 4 + Fuerza A"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "31 dic",
+            "sesion": "MP 5 km @6:10 dentro de 7"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "1 ene",
+            "sesion": "Fuerza B"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "2 ene",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "3 ene",
+            "sesion": "L 26: 8 F + 2×6 @6:10 (2 km @6:50 entre) + 4 F · cuestas en el último tercio"
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "fase": "Específica",
+        "fechas": "4 ene – 10 ene",
+        "km": 46.0,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "4 ene",
+            "sesion": "F 5"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "5 ene",
+            "sesion": "Pista 4×1000 m @5:15 rec 2' (8)"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "6 ene",
+            "sesion": "F 4 + Fuerza A (ligera)"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "7 ene",
+            "sesion": "F 6 + strides"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "8 ene",
+            "sesion": "Fuerza B (ligera)"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "9 ene",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "10 ene",
+            "sesion": "**CARRERA 21K** (+ 2 km cal. = 23)"
+          }
+        ]
+      },
+      {
+        "num": 15,
+        "fase": "Específica",
+        "fechas": "11 ene – 17 ene",
+        "km": 55.0,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "11 ene",
+            "sesion": "F 5"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "12 ene",
+            "sesion": "Umbral 3×12' @5:45 rec 2' (10)"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "13 ene",
+            "sesion": "F 4 + Fuerza A (mantenimiento)"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "14 ene",
+            "sesion": "MP 4 km @6:10 dentro de 6"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "15 ene",
+            "sesion": "Fuerza B (mantenimiento)"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "16 ene",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "17 ene",
+            "sesion": "L 30: 10 F + 14 @6:10 + 6 F · cuestas en el último tercio"
+          }
+        ]
+      },
+      {
+        "num": 16,
+        "fase": "Específica · DESCARGA",
+        "fechas": "18 ene – 24 ene",
+        "km": 41.0,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "18 ene",
+            "sesion": "F 4"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "19 ene",
+            "sesion": "F 7 + strides"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "20 ene",
+            "sesion": "F 4 + Fuerza A (mantenimiento)"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "21 ene",
+            "sesion": "M 6 con 3 km @6:25"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "22 ene",
+            "sesion": "Fuerza B (mantenimiento)"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "23 ene",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "24 ene",
+            "sesion": "L 20 estable ~6:50"
+          }
+        ]
+      },
+      {
+        "num": 17,
+        "fase": "Pico",
+        "fechas": "25 ene – 31 ene",
+        "km": 60.0,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "25 ene",
+            "sesion": "F 5"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "26 ene",
+            "sesion": "Umbral 2×12' @5:45 rec 2' (9)"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "27 ene",
+            "sesion": "F 4 + Fuerza A (mantenimiento)"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "28 ene",
+            "sesion": "F 7 + strides"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "29 ene",
+            "sesion": "Fuerza B (mantenimiento)"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "30 ene",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "31 ene",
+            "sesion": "L 35: 18 F + 12 @6:10 (km 19–30) + 5 F · cuestas en el último tercio"
+          }
+        ]
+      },
+      {
+        "num": 18,
+        "fase": "Taper 1",
+        "fechas": "1 feb – 7 feb",
+        "km": 45.0,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "1 feb",
+            "sesion": "F 5 + Fuerza ligera"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "2 feb",
+            "sesion": "F 6 + 4 strides suaves (solo si no hay fatiga en muslos)"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "3 feb",
+            "sesion": "F 4"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "4 feb",
+            "sesion": "Controlado 8: 3 F + 3 km @6:00–6:10 + 2 F"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "5 feb",
+            "sesion": "Descanso/movilidad"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "6 feb",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "7 feb",
+            "sesion": "L 22: 12 F + 6 @6:10 + 4 F"
+          }
+        ]
+      },
+      {
+        "num": 19,
+        "fase": "Taper 2",
+        "fechas": "8 feb – 14 feb",
+        "km": 36.0,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "8 feb",
+            "sesion": "F 4 + Fuerza ligera (2×8)"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "9 feb",
+            "sesion": "Pista 3×1000 m @5:15 rec 2' (7)"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "10 feb",
+            "sesion": "F 4"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "11 feb",
+            "sesion": "F 5 + 4 strides"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "12 feb",
+            "sesion": "Descanso/movilidad"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "13 feb",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "14 feb",
+            "sesion": "L 16: 5 F + 6 @6:10 + 5 F"
+          }
+        ]
+      },
+      {
+        "num": 20,
+        "fase": "Semana de carrera",
+        "fechas": "15 feb – 21 feb",
+        "km": 61.2,
+        "dias": [
+          {
+            "dia": "Lun",
+            "fecha": "15 feb",
+            "sesion": "F 5 + activación (2×10 fuerza ligera)"
+          },
+          {
+            "dia": "Mar",
+            "fecha": "16 feb",
+            "sesion": "6: 3×1 km @6:10 rec 2'"
+          },
+          {
+            "dia": "Mié",
+            "fecha": "17 feb",
+            "sesion": "F 4"
+          },
+          {
+            "dia": "Jue",
+            "fecha": "18 feb",
+            "sesion": "F 4 + 4 strides"
+          },
+          {
+            "dia": "Vie",
+            "fecha": "19 feb",
+            "sesion": "Descanso + movilidad"
+          },
+          {
+            "dia": "Sáb",
+            "fecha": "20 feb",
+            "sesion": "**Libre (no se entrena)**"
+          },
+          {
+            "dia": "Dom",
+            "fecha": "21 feb",
+            "sesion": "**MARATÓN CAF 42,195 km**"
+          }
+        ]
+      }
+    ];
+
+    // Strength exercises library with MuscleWiki links and descriptions
+    const fuerzaEjercicios = {
+      "fuerza_a": [
+        {
+          name: "Sentadilla Goblet con Mancuerna",
+          meta: "3 series × 10 reps (bajada en 3s) · RPE 6–7 · 60s descanso",
+          desc: "Sostén una mancuerna vertical pegada al pecho. Pies al ancho de hombros con puntas ligeramente hacia afuera. Espalda neutra, desciende la cadera controladamente en 3 segundos cuidando que las rodillas sigan la línea de los pies. Activa cuádriceps y glúteos.",
+          link: "https://musclewiki.com/es-es/exercise/dumbbell-goblet-pulse-squat?model=f"
+        },
+        {
+          name: "Peso Muerto Rumano con Mancuernas",
+          meta: "3 series × 8–10 reps · RPE 7 · 60s descanso",
+          desc: "Bisagra pura de cadera empujando los glúteos hacia atrás con rodillas semiflexionadas (sin doblarlas en sentadilla). Baja las mancuernas pegadas a los muslos hasta sentir el estiramiento en los isquiotibiales. Mantén la espalda totalmente recta.",
+          link: "https://musclewiki.com/es-es/exercise/dumbbell-romanian-deadlift?model=f"
+        },
+        {
+          name: "Zancada Inversa ➔ Sentadilla Búlgara Unilateral",
+          meta: "3 series × 8 reps c/pierna · RPE 7 · 60s descanso",
+          desc: "Da un paso atrás flexionando ambas rodillas a 90°, manteniendo el torso erguido. Empieza siempre con la pierna más débil. Desde sem. 6 eleva el empeine trasero en silla o banco (búlgara) con alineación estricta de rodilla para evitar oscilación hacia adentro.",
+          link: "https://musclewiki.com/es-es/exercise/dumbbell-split-squat?model=f"
+        },
+        {
+          name: "Step-down Excéntrico Lento (Bajada de escalón)",
+          meta: "3 series × 8–10 reps c/pierna (bajada en 3–4s) · RPE 7 · 60s descanso",
+          desc: "CLAVE VASTO MEDIAL Y BAJADAS: Sobre un escalón o caja baja, apóyate en una pierna y desciende el talón opuesto hacia el suelo en 3–4 segundos lentos sin que la rodilla de apoyo colapse en valgo (hacia adentro). Simula el impacto excéntrico de los -642m de desnivel de Caracas.",
+          link: "https://musclewiki.com/es-es/exercise/bodyweight-step-down?model=f"
+        },
+        {
+          name: "Elevación de Talones de Pie con Mancuerna",
+          meta: "3 series × 12–15 reps · RPE 7 · 45s descanso",
+          desc: "De pie sosteniendo mancuerna. Subida explosiva en 1 segundo y bajada controlada y lenta en 3 segundos. Desarrolla la rigidez del tendón de Aquiles y la propulsión elástica.",
+          link: "https://musclewiki.com/es-es/exercise/standing-calf-raise?model=f"
+        }
+      ],
+      "fuerza_b": [
+        {
+          name: "Puente de Copenhague (o Glute Bridge con compresión)",
+          meta: "3 series × 20–30s por lado (o 12 reps con balón) · RPE 7 · 45s descanso",
+          desc: "BLINDAJE DIRECTO ADUCTOR DERECHO: En plancha lateral con la pierna superior apoyada sobre una silla/banco y la inferior suspendida (Copenhague), o tumbado boca arriba en puente de glúteos apretando fuertemente un cojín/balón entre las rodillas. Fortalece la cara interna del muslo para erradicar el calambre del km 30.",
+          link: "https://musclewiki.com/es-es/exercise/adductor-leg-raise-side-lying-isometric?model=f"
+        },
+        {
+          name: "Caminata Lateral con Banda Elástica",
+          meta: "3 series × 12 pasos por lado · RPE 6 · 45s descanso",
+          desc: "Coloca la banda elástica justo por encima de las rodillas (o en tobillos). En semi-sentadilla, da pasos laterales controlados manteniendo la tensión constante en el glúteo medio para estabilizar la pelvis y evitar el colapso medial.",
+          link: "https://musclewiki.com/es-es/exercise/side-walks-resisted?model=f"
+        },
+        {
+          name: "Plancha Frontal de Antebrazos",
+          meta: "3 series × 35–45 seg · RPE 7 · 45s descanso",
+          desc: "Apoyo en antebrazos y puntas de los pies. Contrae abdomen, glúteos y cuádriceps formando una línea recta desde la cabeza hasta los talones. Respira profundamente sin dejar caer la pelvis.",
+          link: "https://musclewiki.com/es-es/exercise/forearm-plank?model=f"
+        },
+        {
+          name: "Dead Bug / Bicho Muerto",
+          meta: "3 series × 10 reps por lado · RPE 6 · 45s descanso",
+          desc: "Boca arriba con brazos hacia el techo y rodillas a 90°. Presiona la espalda baja firmemente contra el suelo. Extiende simultáneamente el brazo derecho y la pierna izquierda sin despegar la zona lumbar.",
+          link: "https://musclewiki.com/es-es/exercise/dead-bug?model=f"
+        },
+        {
+          name: "Elevación de Talones Sentado / Rodilla Flexionada (Sóleo)",
+          meta: "3 series × 15 reps · RPE 7 · 45s descanso",
+          desc: "Sentado con rodillas a 90° y mancuernas apoyadas sobre los muslos cerca de la rodilla. Eleva los talones contrayendo el sóleo. Al tener la rodilla flexionada el gemelo se desactiva y el sóleo asume toda la carga de absorción de impacto.",
+          link: "https://musclewiki.com/es-es/exercise/plantar-flexions-seated-resisted?model=f"
+        }
+      ]
+    };
+
+    let completed = JSON.parse(localStorage.getItem('caf_completed_v3') || '{}');
+    if (Object.keys(completed).length === 0) {
+      // Semana 1 completada
+      completed['1-Lun'] = true;
+      completed['1-Mar'] = true;
+      completed['1-Jue'] = true;
+      completed['1-Dom'] = true;
+      // Semana 2 completada
+      completed['2-Lun'] = true;
+      completed['2-Mar'] = true;
+      completed['2-Mié'] = true;
+      completed['2-Jue'] = true;
+      completed['2-Vie'] = true;
+      completed['2-Dom'] = true;
+      localStorage.setItem('caf_completed_v3', JSON.stringify(completed));
+    }
+
+
+    function getTag(sesion) {
+      if (sesion.includes('Libre') || sesion.includes('Descanso')) return { text: 'Descanso', cls: 'tag-rest' };
+      if (sesion.includes('MARATÓN') || sesion.includes('CARRERA')) return { text: 'Competición', cls: 'tag-race' };
+      if (sesion.startsWith('L ')) return { text: 'Tirada Larga', cls: 'tag-long' };
+      if (sesion.includes('Fuerza')) return { text: 'Fuerza', cls: 'tag-strength' };
+      if (sesion.includes('Pista') || sesion.includes('Umbral') || sesion.includes('Fartlek') || sesion.includes('MP') || sesion.includes('Progresivo') || sesion.startsWith('M ')) return { text: 'Calidad', cls: 'tag-quality' };
+      return { text: 'Fácil (Aeróbico)', cls: 'tag-easy' };
+    }
+
+    function getFaseClass(fase) {
+      if (fase.includes('Base')) return 'fase-base';
+      if (fase.includes('Desarrollo')) return 'fase-desarrollo';
+      if (fase.includes('Específica')) return 'fase-especifica';
+      if (fase.includes('Pico')) return 'fase-pico';
+      return 'fase-taper';
+    }
+
+    function getDetailedDescription(wNum, dayData) {
+      const s = dayData.sesion;
+      let title = s.replace(/\*\*/g, '').replace('✔', '').trim();
+      let targets = [];
+      let desc = "";
+      let strengthKey = null;
+
+      if (s.includes('Libre') || (s.includes('Descanso') && !s.includes('Fuerza'))) {
+        desc = "Día de recuperación total. Hidratación adecuada, alimentación nutritiva y descanso reparador para permitir la supercompensación fisiológica.";
+      } else if (s.includes('Fuerza adaptación')) {
+        desc = "Sesión de adaptación anatómica con mancuernas ligeras y bandas elásticas. Técnica estricta sin llegar a la fatiga muscular.";
+        strengthKey = "fuerza_a";
+      } else if (s.includes('Fuerza A')) {
+        desc = "Sesión de fuerza para tren inferior (piernas, cuádriceps excéntrico y glúteos). Enfoque en blindaje del vasto medial y cuádriceps para descensos, zancada unilateral y tendón de Aquiles.";
+        strengthKey = "fuerza_a";
+      } else if (s.includes('Fuerza B')) {
+        desc = "Sesión de fuerza enfocada en aductores (blindaje directo cara interna del muslo), estabilidad pélvica, core y sóleo con rodilla flexionada. No fatiga los cuádriceps antes de la tirada larga.";
+        strengthKey = "fuerza_b";
+      } else if (s.includes('Fuerza ligera')) {
+        desc = "Sesión de mantenimiento en fase de Taper / Pico. Carga reducida (2 series × 8-10 reps) solo para mantener el tono neuromuscular sin acumular fatiga.";
+        strengthKey = "fuerza_a";
+      } else if (s.includes('MARATÓN CAF')) {
+        desc = "¡DÍA D! 42,195 km por las calles de Caracas. Salida controlada a 6:15–6:25 los primeros 5 km. Techo estricto de FC < 156 lpm hasta el Km 21 y PROHIBIDO dejarse ir a 6:00/km en bajadas (Beatriz ancla de ritmo a 6:10–6:12). Micro-pausas activas de 15–20s caminando rápido en avituallamientos cada 5 km desde el km 15. En el Km 30–35 (subidas), zancada corta y cadencia alta para proteger aductores y vasto medial.";
+        targets = [
+          { name: "Distancia", val: "42.195 km", sub: "Oficial CAF" },
+          { name: "Ritmo Meta", val: "6:10 min/km", sub: "Tiempo ≈ 4:20:12" },
+          { name: "FC Oliver", val: "< 156 lpm (1ª mitad)", sub: "Zona 3 media" },
+          { name: "FC Beatriz", val: "133–144 lpm", sub: "Ancla de ritmo" }
+        ];
+      } else if (s.includes('CARRERA 10K')) {
+        desc = "Test de control 10K. Calentamiento: 2 km fácil + técnica + 4 strides. Los 10K se corren a ritmo firme (~5:30-5:40 min/km) para recalibrar umbrales y VO2 máx. Enfriamiento: 2 km muy suave.";
+        targets = [
+          { name: "Estructura", val: "2k Cal + 10k + 2k Enf", sub: "Total 14 km" },
+          { name: "Ritmo 10K", val: "5:30 – 5:40 min/km", sub: "Esfuerzo sostenido" },
+          { name: "FC Oliver", val: "162–172 lpm", sub: "Zona 4 alta" },
+          { name: "FC Beatriz", val: "152–162 lpm", sub: "Zona 4 alta" }
+        ];
+      } else if (s.includes('CARRERA 21K')) {
+        desc = "Medio Maratón de control y simulacro oficial de carrera. Se prueba el calzado oficial, la ropa y el plan de nutrición (geles cada 30 min). Objetivo: ritmo sostenido a 6:10-6:15 min/km.";
+        targets = [
+          { name: "Estructura", val: "2k Cal + 21.1k", sub: "Total 23 km" },
+          { name: "Ritmo 21K", val: "6:10 – 6:15 min/km", sub: "Tiempo ≤ 2:10–2:13" },
+          { name: "FC Oliver", val: "150–160 lpm", sub: "Zona 3" },
+          { name: "FC Beatriz", val: "133–145 lpm", sub: "Zona 3" }
+        ];
+      } else if (s.startsWith('L ')) {
+        desc = "Tirada larga dominical. Construcción de resistencia lipolítica y capacidad neuromuscular.";
+        if (wNum >= 6) {
+          desc += " [DIRECTRIZ TÉCNICA EN BAJADAS]: Prohibido alargar zancada (>0.98 m) o bajar de 6:05/km en descensos; mantener cadencia 162–165 ppm y aterrizaje bajo centro de masa para ahorrar cuádriceps.";
+        }
+        if (s.includes('cuestas')) {
+          desc += " [SIMULACRO CUESTAS EN FATIGA]: Incluir cuestas deliberadas en el último tercio de la tirada para replicar el ascenso (+208 m) entre el km 30 y 40 de Caracas.";
+        }
+        targets = [
+          { name: "Ritmo Base", val: "6:50 – 7:20 min/km", sub: "Bloques MP a 6:10" },
+          { name: "FC Oliver", val: "130–150 lpm", sub: "Zona 2 / Zona 3 baja" },
+          { name: "FC Beatriz", val: "125–138 lpm", sub: "Zona 2" },
+          { name: "Nutrición", val: "Agua + Sales + Gel", sub: "Cada 35–40 min" }
+        ];
+      } else if (s.includes('Controlado')) {
+        desc = "Rodaje controlado suave post-35K. 3 km calentamiento fácil + 3 km a ritmo objetivo controlado (6:00–6:10) + 2 km enfriamiento fácil. Estimula la musculatura sin generar sobrecarga en fase de taper.";
+        targets = [
+          { name: "Estructura", val: "3 F + 3 MP + 2 F", sub: "Total 8 km" },
+          { name: "Ritmo MP", val: "6:00 – 6:10 min/km", sub: "Controlado suave" },
+          { name: "FC Oliver", val: "150–158 lpm", sub: "Zona 3" },
+          { name: "FC Beatriz", val: "133–144 lpm", sub: "Zona 3" }
+        ];
+      } else if (s.includes('Pista')) {
+        desc = "Sesión de series en pista de atletismo. 2 km de calentamiento + movilidad + 4 rectas progresivas antes de comenzar. Mantener el ritmo constante en cada repetición. Recuperación caminando o al trote suave según lo indicado.";
+        targets = [
+          { name: "Ritmo Series", val: "5:05 – 5:20 min/km", sub: "Potencia aeróbica (Z5)" },
+          { name: "FC Oliver", val: "168–175 lpm", sub: "Zona 5" },
+          { name: "FC Beatriz", val: "162–172 lpm", sub: "Zona 5" },
+          { name: "Recuperación", val: "200m–400m trote / 2'", sub: "Bajar pulsaciones" }
+        ];
+      } else if (s.includes('Umbral')) {
+        desc = "Entrenamiento de Tempo / Umbral de lactato. 2 km fácil de calentamiento. Bloques a ritmo firme sin llegar al sprint. Busca elevar el aclaramiento de lactato para retrasar la fatiga en carrera.";
+        targets = [
+          { name: "Ritmo Bloques", val: "5:40 – 5:50 min/km", sub: "Ritmo Umbral (Z4)" },
+          { name: "FC Oliver", val: "158–168 lpm", sub: "Zona 4" },
+          { name: "FC Beatriz", val: "149–160 lpm", sub: "Zona 4" },
+          { name: "Descanso", val: "2–3 min trote suave", sub: "Entre bloques" }
+        ];
+      } else if (s.includes('Fartlek')) {
+        desc = "Juego de ritmos: alternancia de cambios de velocidad vivos con recuperaciones al trote suave sin detenerse. Mejora la capacidad de cambio de ritmo y la eficiencia mecánica.";
+        targets = [
+          { name: "Ritmo Cambios", val: "5:30 – 5:40 min/km", sub: "Esfuerzo controlado" },
+          { name: "Recuperación", val: "1 min trote fácil", sub: "No parar de trotar" }
+        ];
+      } else if (s.includes('MP')) {
+        desc = "Rodaje con bloque central a Ritmo Específico de Maratón (6:10 min/km). Interioriza la cadencia de zancada, respiración y percepción de esfuerzo para el Maratón CAF.";
+        targets = [
+          { name: "Ritmo MP", val: "6:10 min/km", sub: "Ritmo meta exacto" },
+          { name: "FC Oliver", val: "150–158 lpm", sub: "Zona 3" },
+          { name: "FC Beatriz", val: "133–144 lpm", sub: "Zona 3" }
+        ];
+      } else if (s.startsWith('F ') || s.includes('fácil')) {
+        desc = "Rodaje regenerativo / fácil. El ritmo debe permitir mantener una conversación completa sin que falte el aire. Fundamental para asimilar la carga de calidad sin fatigar el sistema nervioso central.";
+        targets = [
+          { name: "Ritmo Objetivo", val: "7:00 – 7:30 min/km", sub: "Conversacional" },
+          { name: "FC Oliver", val: "125–145 lpm", sub: "Zona 2 regenerativa" },
+          { name: "FC Beatriz", val: "126–132 lpm", sub: "Zona 2 regenerativa" }
+        ];
+      }
+
+      if (s.includes('strides')) {
+        desc += " Al finalizar el rodaje, realiza las rectas progresivas indicadas (strides): 20 segundos acelerando progresivamente hasta un 85-90% de velocidad máxima con zancada amplia y relajada, recuperando 60 segundos caminando.";
+      }
+
+      return { title, desc, targets, strengthKey };
+    }
+
+    function openModal(wNum, dayIdx) {
+      const week = planData.find(w => w.num === wNum);
+      const day = week.dias[dayIdx];
+      const details = getDetailedDescription(wNum, day);
+
+      document.getElementById('modalSessionTitle').innerText = details.title;
+      document.getElementById('modalSessionSubtitle').innerText = `Semana ${wNum} (${week.fase.replace(' · DESCARGA', '')}) · ${day.dia} ${day.fecha}`;
+
+      let bodyHtml = `
+        <div class="modal-section">
+          <div class="modal-section-title">Descripción y Propósito</div>
+          <div class="modal-desc-box">${details.desc}</div>
+        </div>
+      `;
+
+      if (details.targets.length > 0) {
+        bodyHtml += `
+          <div class="modal-section">
+            <div class="modal-section-title">Parámetros Objetivo</div>
+            <div class="targets-grid">
+              ${details.targets.map(t => `
+                <div class="target-card">
+                  <div class="name">${t.name}</div>
+                  <div class="val">${t.val}</div>
+                  <div class="sub">${t.sub}</div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      }
+
+      if (details.strengthKey && fuerzaEjercicios[details.strengthKey]) {
+        const exercises = fuerzaEjercicios[details.strengthKey];
+        bodyHtml += `
+          <div class="modal-section">
+            <div class="modal-section-title">Ejercicios de la Rutina (${details.strengthKey === 'fuerza_a' ? 'Fuerza A: Piernas/Glúteos' : 'Fuerza B: Estabilidad/Core'})</div>
+            <div>
+              ${exercises.map(ex => `
+                <div class="strength-item-modal">
+                  <div class="strength-item-header">
+                    <span class="strength-item-name">${ex.name}</span>
+                    <span class="strength-item-meta">${ex.meta}</span>
+                  </div>
+                  <p class="strength-item-desc">${ex.desc}</p>
+                  <a href="${ex.link}" target="_blank" class="modal-link-btn">
+                    Ver video y técnica en MuscleWiki ↗
+                  </a>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      }
+
+      document.getElementById('modalBody').innerHTML = bodyHtml;
+      document.getElementById('sessionModal').classList.add('active');
+    }
+
+    function closeModal() {
+      document.getElementById('sessionModal').classList.remove('active');
+    }
+
+    function closeModalOnOverlay(e) {
+      if (e.target.id === 'sessionModal') closeModal();
+    }
+
+    
+    function toggleWeekCollapse(card) {
+      card.classList.toggle('collapsed');
+    }
+
+    function expandAllWeeks() {
+      document.querySelectorAll('.week-card').forEach(c => c.classList.remove('collapsed'));
+    }
+
+    function collapseAllWeeks() {
+      document.querySelectorAll('.week-card').forEach(c => {
+        if (!c.classList.contains('is-current-week')) {
+          c.classList.add('collapsed');
+        }
+      });
+    }
+
+    function renderWeeks(filter = 'all') {
+      const container = document.getElementById('weeksContainer');
+      container.innerHTML = '';
+
+      planData.forEach(w => {
+        if (filter !== 'all' && !w.fase.toLowerCase().includes(filter.toLowerCase())) return;
+
+        const card = document.createElement('div');
+        card.className = 'week-card';
+
+        const isDescarga = w.fase.includes('DESCARGA');
+        const faseCls = getFaseClass(w.fase);
+
+        let daysHtml = '';
+        w.dias.forEach((d, idx) => {
+          const key = `${w.num}-${d.dia}`;
+          const isDone = !!completed[key];
+          const isRest = d.sesion.includes('Libre') || d.sesion.includes('Descanso');
+          const tag = getTag(d.sesion);
+          const cleanText = d.sesion.replace(/\*\*/g, '').replace('✔', '').trim();
+
+          daysHtml += `
+            <div class="day-cell ${isRest ? 'is-rest' : ''} ${isDone ? 'is-completed' : ''}" 
+                 id="cell-${key}" 
+                 onclick="${!isRest ? `openModal(${w.num}, ${idx})` : ''}">
+              <div>
+                <div class="day-header">
+                  <span class="day-name">${d.dia}</span>
+                  <span class="day-date">${d.fecha}</span>
+                </div>
+                <div>
+                  <span class="session-tag ${tag.cls}">${tag.text}</span>
+                </div>
+                <div class="session-content">${cleanText}</div>
+              </div>
+              <div class="day-cell-footer">
+                ${!isRest ? `
+                  <span class="info-hint">Ver detalle ↗</span>
+                  <button class="check-btn ${isDone ? 'checked' : ''}" 
+                          onclick="event.stopPropagation(); toggleCheck('${key}')">
+                    ${isDone ? '✓ Hecho' : '○ Marcar'}
+                  </button>
+                ` : '<span style="font-size:0.75rem; color:var(--text-dim);">Recuperación</span>'}
+              </div>
+            </div>
+          `;
+        });
+
+        // Semana actual: 3 (19-25 oct 2026). Semana actual expandida, resto colapsadas por defecto
+        const isCurrentWeek = (w.num === 3);
+        if (isCurrentWeek) {
+          card.classList.add('is-current-week');
+        } else {
+          card.classList.add('collapsed');
+        }
+
+
+        card.innerHTML = `
+          <div class="week-header" onclick="toggleWeekCollapse(this.parentElement)" title="Clic para expandir / colapsar semana">
+            <div class="week-title">
+              <span class="week-num">Semana ${w.num}</span>
+              <span class="fase-badge ${faseCls}">${w.fase.replace(' · DESCARGA', '')}</span>
+              ${isDescarga ? '<span class="descarga-pill">Descarga</span>' : ''}
+              ${isCurrentWeek ? '<span class="fase-badge" style="background:rgba(16,185,129,0.2);color:#10b981;border:1px solid rgba(16,185,129,0.4);">Semana Actual</span>' : ''}
+              <span style="color:var(--text-dim); font-size:0.85rem;">(${w.fechas})</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:14px;">
+              <span class="week-km">${w.km} km</span>
+              <span class="toggle-icon">▼</span>
+            </div>
+          </div>
+          <div class="days-grid">
+            ${daysHtml}
+          </div>
+        `;
+        container.appendChild(card);
+      });
+
+      updateStats();
+    }
+
+    function toggleCheck(key) {
+      completed[key] = !completed[key];
+      localStorage.setItem('caf_completed_v2', JSON.stringify(completed));
+      
+      const cell = document.getElementById(`cell-${key}`);
+      const btn = cell.querySelector('.check-btn');
+      
+      if (completed[key]) {
+        btn.classList.add('checked');
+        btn.innerHTML = '✓ Hecho';
+        cell.classList.add('is-completed');
+      } else {
+        btn.classList.remove('checked');
+        btn.innerHTML = '○ Marcar';
+        cell.classList.remove('is-completed');
+      }
+      updateStats();
+    }
+
+    function updateStats() {
+      let count = 0;
+      let totalTrainable = 0;
+
+      planData.forEach(w => {
+        w.dias.forEach(d => {
+          if (!d.sesion.includes('Libre') && !d.sesion.includes('Descanso')) {
+            totalTrainable++;
+            if (completed[`${w.num}-${d.dia}`]) count++;
+          }
+        });
+      });
+
+      document.getElementById('completedDays').innerText = `${count} / ${totalTrainable}`;
+      const pct = ((count / totalTrainable) * 100).toFixed(1);
+      document.getElementById('progressPercent').innerText = `${pct}%`;
+      document.getElementById('progressBar').style.width = `${pct}%`;
+    }
+
+    function filterPhase(phase, btn) {
+      document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      renderWeeks(phase);
+    }
+
+    function switchView(view) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+
+      document.getElementById('calendarView').style.display = view === 'calendar' ? 'block' : 'none';
+      document.getElementById('strengthView').style.display = view === 'strength' ? 'block' : 'none';
+      document.getElementById('zonesView').style.display = view === 'zones' ? 'block' : 'none';
+    }
+
+    // Escape key closes modal
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    renderWeeks();
+  </script>
+</body>
+</html>
