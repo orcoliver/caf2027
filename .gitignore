@@ -1,8 +1,9 @@
 # Ignorar todo por defecto en git
 *
 
-# Permitir unicamente index.html y .gitignore
+# Permitir unicamente index.html, plan.json y .gitignore
 !index.html
+!plan.json
 !.gitignore
 
 # Archivos de entorno y credenciales (redundancia de seguridad)

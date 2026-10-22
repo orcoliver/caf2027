@@ -1,0 +1,1137 @@
+{
+  "version": "2.2",
+  "updatedAt": "2026-10-22",
+  "raceDate": "2027-02-21",
+  "targetPace": "6:10",
+  "targetTime": "4:20:12",
+  "totalKm": 923.5,
+  "maxLongRunKm": 35,
+  "weeks": [
+    {
+      "num": 1,
+      "fase": "Base",
+      "nota": "Reinicio. Completada: 28,1 km (Oliver) / 28,1 km (Beatriz, reloj sin batería al km 6,4). Fuerza omitida.",
+      "fechas": "5 oct – 11 oct",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-11",
+      "km": 28.1,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "5 oct",
+          "isoDate": "2026-10-05",
+          "sesion": "F 3,4 ✔"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "6 oct",
+          "isoDate": "2026-10-06",
+          "sesion": "F 7,1 ✔"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "7 oct",
+          "isoDate": "2026-10-07",
+          "sesion": "Descanso"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "8 oct",
+          "isoDate": "2026-10-08",
+          "sesion": "F 6,8 ✔"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "9 oct",
+          "isoDate": "2026-10-09",
+          "sesion": "Fuerza adaptación (omitida)"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "10 oct",
+          "isoDate": "2026-10-10",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "11 oct",
+          "isoDate": "2026-10-11",
+          "sesion": "L 10 fácil ✔"
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "fase": "Base",
+      "nota": "Hábito y consistencia. Completada: 32,2 km (Oliver) / 33,2 km (Beatriz). 100 % de carrera cumplido.",
+      "fechas": "12 oct – 18 oct",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-18",
+      "km": 32.2,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "12 oct",
+          "isoDate": "2026-10-12",
+          "sesion": "F 4,3 ✔"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "13 oct",
+          "isoDate": "2026-10-13",
+          "sesion": "F 7,2 + 6×20\" strides ✔"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "14 oct",
+          "isoDate": "2026-10-14",
+          "sesion": "F 4 + Fuerza A ✔"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "15 oct",
+          "isoDate": "2026-10-15",
+          "sesion": "F 5 ✔"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "16 oct",
+          "isoDate": "2026-10-16",
+          "sesion": "Fuerza B ✔"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "17 oct",
+          "isoDate": "2026-10-17",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "18 oct",
+          "isoDate": "2026-10-18",
+          "sesion": "L 11,7 fácil ✔"
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "fase": "Base",
+      "nota": "Primer toque de ritmo. Escalonamiento orgánico tras los 11,7 km sin fatiga de la semana 2.",
+      "fechas": "19 oct – 25 oct",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-25",
+      "km": 36,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "19 oct",
+          "isoDate": "2026-10-19",
+          "sesion": "F 5"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "20 oct",
+          "isoDate": "2026-10-20",
+          "sesion": "Fartlek 6×1' @5:30–5:40 / 1' trote (6)"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "21 oct",
+          "isoDate": "2026-10-21",
+          "sesion": "F 4 + Fuerza A"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "22 oct",
+          "isoDate": "2026-10-22",
+          "sesion": "F 7"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "23 oct",
+          "isoDate": "2026-10-23",
+          "sesion": "Fuerza B"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "24 oct",
+          "isoDate": "2026-10-24",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "25 oct",
+          "isoDate": "2026-10-25",
+          "sesion": "L 14 fácil"
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "fase": "Base · DESCARGA",
+      "nota": "Semana de descarga para asimilar las primeras 3 semanas.",
+      "fechas": "26 oct – 1 nov",
+      "startDate": "2026-10-26",
+      "endDate": "2026-11-01",
+      "km": 31,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "26 oct",
+          "isoDate": "2026-10-26",
+          "sesion": "F 4"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "27 oct",
+          "isoDate": "2026-10-27",
+          "sesion": "F 6 + 6 strides"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "28 oct",
+          "isoDate": "2026-10-28",
+          "sesion": "F 4 + Fuerza A"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "29 oct",
+          "isoDate": "2026-10-29",
+          "sesion": "F 5"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "30 oct",
+          "isoDate": "2026-10-30",
+          "sesion": "Fuerza B"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "31 oct",
+          "isoDate": "2026-10-31",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "1 nov",
+          "isoDate": "2026-11-01",
+          "sesion": "L 12 fácil"
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "fase": "Base",
+      "nota": "Primera pista y progresivo aeróbico.",
+      "fechas": "2 nov – 8 nov",
+      "startDate": "2026-11-02",
+      "endDate": "2026-11-08",
+      "km": 40,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "2 nov",
+          "isoDate": "2026-11-02",
+          "sesion": "F 5"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "3 nov",
+          "isoDate": "2026-11-03",
+          "sesion": "Pista 6×400 m @5:10 rec 200 m trote (7)"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "4 nov",
+          "isoDate": "2026-11-04",
+          "sesion": "F 4 + Fuerza A"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "5 nov",
+          "isoDate": "2026-11-05",
+          "sesion": "Progresivo 8: 5 F + 3 @6:30"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "6 nov",
+          "isoDate": "2026-11-06",
+          "sesion": "Fuerza B"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "7 nov",
+          "isoDate": "2026-11-07",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "8 nov",
+          "isoDate": "2026-11-08",
+          "sesion": "L 16 fácil"
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "fase": "Desarrollo",
+      "nota": "Inicio de fuerza máxima, umbral y control técnico de bajadas en tirada larga.",
+      "fechas": "9 nov – 15 nov",
+      "startDate": "2026-11-09",
+      "endDate": "2026-11-15",
+      "km": 43,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "9 nov",
+          "isoDate": "2026-11-09",
+          "sesion": "F 5"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "10 nov",
+          "isoDate": "2026-11-10",
+          "sesion": "Umbral 2×10' @5:45 rec 3' (8)"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "11 nov",
+          "isoDate": "2026-11-11",
+          "sesion": "F 4 + Fuerza A"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "12 nov",
+          "isoDate": "2026-11-12",
+          "sesion": "M 8 con 4 km @6:20"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "13 nov",
+          "isoDate": "2026-11-13",
+          "sesion": "Fuerza B"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "14 nov",
+          "isoDate": "2026-11-14",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "15 nov",
+          "isoDate": "2026-11-15",
+          "sesion": "L 18 (últimos 3 km @6:20 · control bajadas)"
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "fase": "Desarrollo",
+      "nota": "Primer fondo de 20 km en noviembre (igualando progresión 2025 con mejor base muscular).",
+      "fechas": "16 nov – 22 nov",
+      "startDate": "2026-11-16",
+      "endDate": "2026-11-22",
+      "km": 48,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "16 nov",
+          "isoDate": "2026-11-16",
+          "sesion": "F 5"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "17 nov",
+          "isoDate": "2026-11-17",
+          "sesion": "Pista 5×800 m @5:15 rec 400 m (9)"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "18 nov",
+          "isoDate": "2026-11-18",
+          "sesion": "F 5 + Fuerza A"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "19 nov",
+          "isoDate": "2026-11-19",
+          "sesion": "MP 9: 5 F + 4 km @6:10"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "20 nov",
+          "isoDate": "2026-11-20",
+          "sesion": "Fuerza B"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "21 nov",
+          "isoDate": "2026-11-21",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "22 nov",
+          "isoDate": "2026-11-22",
+          "sesion": "L 20: 14 F + 4 @6:10 + 2 F · control bajadas"
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "fase": "Desarrollo · DESCARGA",
+      "nota": "Descarga + **Control 10K el domingo** (esfuerzo ~5:30–5:40/km). Recalibrar zonas.",
+      "fechas": "23 nov – 29 nov",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-29",
+      "km": 33,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "23 nov",
+          "isoDate": "2026-11-23",
+          "sesion": "F 4"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "24 nov",
+          "isoDate": "2026-11-24",
+          "sesion": "F 6 + strides"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "25 nov",
+          "isoDate": "2026-11-25",
+          "sesion": "F 4 + Fuerza A"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "26 nov",
+          "isoDate": "2026-11-26",
+          "sesion": "F 5 + 4 strides"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "27 nov",
+          "isoDate": "2026-11-27",
+          "sesion": "Fuerza B (ligera)"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "28 nov",
+          "isoDate": "2026-11-28",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "29 nov",
+          "isoDate": "2026-11-29",
+          "sesion": "**CARRERA 10K** (+ 4 km cal./enfr. = 14)"
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "fase": "Desarrollo",
+      "nota": "Consolidación de bloques MP en jueves y tirada larga con cuestas al final.",
+      "fechas": "30 nov – 6 dic",
+      "startDate": "2026-11-30",
+      "endDate": "2026-12-06",
+      "km": 51,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "30 nov",
+          "isoDate": "2026-11-30",
+          "sesion": "F 5"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "1 dic",
+          "isoDate": "2026-12-01",
+          "sesion": "Pista 6×1000 m @5:20 rec 2' (10)"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "2 dic",
+          "isoDate": "2026-12-02",
+          "sesion": "F 5 + Fuerza A"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "3 dic",
+          "isoDate": "2026-12-03",
+          "sesion": "MP 9: 4 F + 5 km @6:10"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "4 dic",
+          "isoDate": "2026-12-04",
+          "sesion": "Fuerza B"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "5 dic",
+          "isoDate": "2026-12-05",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "6 dic",
+          "isoDate": "2026-12-06",
+          "sesion": "L 22: 12 F + 6 @6:10 + 4 F · cuestas en el último tercio"
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "fase": "Desarrollo",
+      "nota": "Fondo medio de 10 km el jueves y tirada de 24 km.",
+      "fechas": "7 dic – 13 dic",
+      "startDate": "2026-12-07",
+      "endDate": "2026-12-13",
+      "km": 54,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "7 dic",
+          "isoDate": "2026-12-07",
+          "sesion": "F 5"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "8 dic",
+          "isoDate": "2026-12-08",
+          "sesion": "Umbral 3×10' @5:45 rec 2' (10)"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "9 dic",
+          "isoDate": "2026-12-09",
+          "sesion": "F 5 + Fuerza A"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "10 dic",
+          "isoDate": "2026-12-10",
+          "sesion": "MP 10: 4 F + 6 km @6:10"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "11 dic",
+          "isoDate": "2026-12-11",
+          "sesion": "Fuerza B"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "12 dic",
+          "isoDate": "2026-12-12",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "13 dic",
+          "isoDate": "2026-12-13",
+          "sesion": "L 24: 10 F + 2×5 @6:10 (1 km @7:00 entre) + 3 F · control bajadas"
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "fase": "Específica",
+      "nota": "Entrada en fase específica: jueves de 11 km y tirada de 26 km antes de Navidad.",
+      "fechas": "14 dic – 20 dic",
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-20",
+      "km": 57,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "14 dic",
+          "isoDate": "2026-12-14",
+          "sesion": "F 5"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "15 dic",
+          "isoDate": "2026-12-15",
+          "sesion": "Pista 5×1200 m @5:20 rec 2' (10)"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "16 dic",
+          "isoDate": "2026-12-16",
+          "sesion": "F 5 + Fuerza A"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "17 dic",
+          "isoDate": "2026-12-17",
+          "sesion": "MP 11: 4 F + 7 km @6:10"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "18 dic",
+          "isoDate": "2026-12-18",
+          "sesion": "Fuerza B"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "19 dic",
+          "isoDate": "2026-12-19",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "20 dic",
+          "isoDate": "2026-12-20",
+          "sesion": "L 26: 12 F + 10 @6:10 + 4 F · cuestas en el último tercio"
+        }
+      ]
+    },
+    {
+      "num": 12,
+      "fase": "Específica · DESCARGA",
+      "nota": "Semana de descarga (Navidad) sin perder continuidad.",
+      "fechas": "21 dic – 27 dic",
+      "startDate": "2026-12-21",
+      "endDate": "2026-12-27",
+      "km": 42,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "21 dic",
+          "isoDate": "2026-12-21",
+          "sesion": "F 5"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "22 dic",
+          "isoDate": "2026-12-22",
+          "sesion": "F 7 + strides"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "23 dic",
+          "isoDate": "2026-12-23",
+          "sesion": "F 4 + Fuerza A"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "24 dic",
+          "isoDate": "2026-12-24",
+          "sesion": "M 8 con 4 km @6:20"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "25 dic",
+          "isoDate": "2026-12-25",
+          "sesion": "Fuerza B"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "26 dic",
+          "isoDate": "2026-12-26",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "27 dic",
+          "isoDate": "2026-12-27",
+          "sesion": "L 18 estable ~6:50"
+        }
+      ]
+    },
+    {
+      "num": 13,
+      "fase": "Específica",
+      "nota": "Año nuevo: volumen sólido (60 km) y tirada de 28 km con 14 km a ritmo de maratón.",
+      "fechas": "28 dic – 3 ene",
+      "startDate": "2026-12-28",
+      "endDate": "2027-01-03",
+      "km": 60,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "28 dic",
+          "isoDate": "2026-12-28",
+          "sesion": "F 6"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "29 dic",
+          "isoDate": "2026-12-29",
+          "sesion": "Umbral 3×10' @5:45 rec 2' (10)"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "30 dic",
+          "isoDate": "2026-12-30",
+          "sesion": "F 5 + Fuerza A"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "31 dic",
+          "isoDate": "2026-12-31",
+          "sesion": "MP 11: 4 F + 7 km @6:10"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "1 ene",
+          "isoDate": "2027-01-01",
+          "sesion": "Fuerza B"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "2 ene",
+          "isoDate": "2027-01-02",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "3 ene",
+          "isoDate": "2027-01-03",
+          "sesion": "L 28: 8 F + 2×7 @6:10 (2 km @6:50 entre) + 4 F · cuestas en el último tercio"
+        }
+      ]
+    },
+    {
+      "num": 14,
+      "fase": "Específica",
+      "nota": "**Control 21K el domingo** a ~6:05–6:15 (simulacro oficial: calzado, nutrición y sodio de carrera).",
+      "fechas": "4 ene – 10 ene",
+      "startDate": "2027-01-04",
+      "endDate": "2027-01-10",
+      "km": 48,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "4 ene",
+          "isoDate": "2027-01-04",
+          "sesion": "F 5"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "5 ene",
+          "isoDate": "2027-01-05",
+          "sesion": "Pista 4×1000 m @5:15 rec 2' (8)"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "6 ene",
+          "isoDate": "2027-01-06",
+          "sesion": "F 4 + Fuerza A (ligera)"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "7 ene",
+          "isoDate": "2027-01-07",
+          "sesion": "F 7 + strides"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "8 ene",
+          "isoDate": "2027-01-08",
+          "sesion": "Fuerza B (ligera)"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "9 ene",
+          "isoDate": "2027-01-09",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "10 ene",
+          "isoDate": "2027-01-10",
+          "sesion": "**CARRERA 21K** (+ 3 km cal./enfr. = 24)"
+        }
+      ]
+    },
+    {
+      "num": 15,
+      "fase": "Específica",
+      "nota": "Semana de alta especificidad: jueves de 12 km y tirada de 32 km con 15 km a ritmo de maratón.",
+      "fechas": "11 ene – 17 ene",
+      "startDate": "2027-01-11",
+      "endDate": "2027-01-17",
+      "km": 66,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "11 ene",
+          "isoDate": "2027-01-11",
+          "sesion": "F 6"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "12 ene",
+          "isoDate": "2027-01-12",
+          "sesion": "Umbral 3×12' @5:45 rec 2' (11)"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "13 ene",
+          "isoDate": "2027-01-13",
+          "sesion": "F 5 + Fuerza A (mantenimiento)"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "14 ene",
+          "isoDate": "2027-01-14",
+          "sesion": "MP 12: 4 F + 8 km @6:10"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "15 ene",
+          "isoDate": "2027-01-15",
+          "sesion": "Fuerza B (mantenimiento)"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "16 ene",
+          "isoDate": "2027-01-16",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "17 ene",
+          "isoDate": "2027-01-17",
+          "sesion": "L 32: 12 F + 15 @6:10 + 5 F · cuestas en el último tercio"
+        }
+      ]
+    },
+    {
+      "num": 16,
+      "fase": "Específica · DESCARGA",
+      "nota": "Descarga activa antes de la semana cumbre.",
+      "fechas": "18 ene – 24 ene",
+      "startDate": "2027-01-18",
+      "endDate": "2027-01-24",
+      "km": 44,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "18 ene",
+          "isoDate": "2027-01-18",
+          "sesion": "F 5"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "19 ene",
+          "isoDate": "2027-01-19",
+          "sesion": "F 7 + strides"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "20 ene",
+          "isoDate": "2027-01-20",
+          "sesion": "F 4 + Fuerza A (mantenimiento)"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "21 ene",
+          "isoDate": "2027-01-21",
+          "sesion": "M 8 con 4 km @6:20"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "22 ene",
+          "isoDate": "2027-01-22",
+          "sesion": "Fuerza B (mantenimiento)"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "23 ene",
+          "isoDate": "2027-01-23",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "24 ene",
+          "isoDate": "2027-01-24",
+          "sesion": "L 20 estable ~6:50"
+        }
+      ]
+    },
+    {
+      "num": 17,
+      "fase": "Pico",
+      "nota": "**Semana cumbre (67 km): tirada de 35 km** (3 semanas antes de la carrera). Simulacro completo anti-calambres: ritmo, geles, sodio, calzado y horario 6 a.m.",
+      "fechas": "25 ene – 31 ene",
+      "startDate": "2027-01-25",
+      "endDate": "2027-01-31",
+      "km": 67,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "25 ene",
+          "isoDate": "2027-01-25",
+          "sesion": "F 6"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "26 ene",
+          "isoDate": "2027-01-26",
+          "sesion": "Umbral 2×12' @5:45 rec 2' (10)"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "27 ene",
+          "isoDate": "2027-01-27",
+          "sesion": "F 5 + Fuerza A (mantenimiento)"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "28 ene",
+          "isoDate": "2027-01-28",
+          "sesion": "MP 11: 5 F + 6 km @6:10"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "29 ene",
+          "isoDate": "2027-01-29",
+          "sesion": "Fuerza B (mantenimiento)"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "30 ene",
+          "isoDate": "2027-01-30",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "31 ene",
+          "isoDate": "2027-01-31",
+          "sesion": "L 35: 17 F + 13 @6:10 (km 18–30) + 5 F · cuestas en el último tercio"
+        }
+      ]
+    },
+    {
+      "num": 18,
+      "fase": "Taper 1",
+      "nota": "Volumen −31 %. Sin pista 48 h después de los 35 km: el martes es recuperación y el estímulo vivo pasa al jueves. 1 sesión de fuerza ligera.",
+      "fechas": "1 feb – 7 feb",
+      "startDate": "2027-02-01",
+      "endDate": "2027-02-07",
+      "km": 46,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "1 feb",
+          "isoDate": "2027-02-01",
+          "sesion": "F 5 + Fuerza ligera"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "2 feb",
+          "isoDate": "2027-02-02",
+          "sesion": "F 6 + 4 strides suaves (solo si no hay fatiga en muslos)"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "3 feb",
+          "isoDate": "2027-02-03",
+          "sesion": "F 4"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "4 feb",
+          "isoDate": "2027-02-04",
+          "sesion": "Controlado 9: 3 F + 4 km @6:05–6:10 + 2 F"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "5 feb",
+          "isoDate": "2027-02-05",
+          "sesion": "Descanso/movilidad"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "6 feb",
+          "isoDate": "2027-02-06",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "7 feb",
+          "isoDate": "2027-02-07",
+          "sesion": "L 22: 12 F + 6 @6:10 + 4 F"
+        }
+      ]
+    },
+    {
+      "num": 19,
+      "fase": "Taper 2",
+      "nota": "Volumen −46 % respecto al pico. Asimilación y frescura neuromuscular.",
+      "fechas": "8 feb – 14 feb",
+      "startDate": "2027-02-08",
+      "endDate": "2027-02-14",
+      "km": 36,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "8 feb",
+          "isoDate": "2027-02-08",
+          "sesion": "F 4 + Fuerza ligera (2×8)"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "9 feb",
+          "isoDate": "2027-02-09",
+          "sesion": "Pista 3×1000 m @5:15 rec 2' (7)"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "10 feb",
+          "isoDate": "2027-02-10",
+          "sesion": "F 4"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "11 feb",
+          "isoDate": "2027-02-11",
+          "sesion": "F 5 + 4 strides"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "12 feb",
+          "isoDate": "2027-02-12",
+          "sesion": "Descanso/movilidad"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "13 feb",
+          "isoDate": "2027-02-13",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "14 feb",
+          "isoDate": "2027-02-14",
+          "sesion": "L 16: 5 F + 6 @6:10 + 5 F"
+        }
+      ]
+    },
+    {
+      "num": 20,
+      "fase": "Semana de carrera",
+      "nota": "Descanso total el sábado. Supercompensación completa para el 21 de febrero.",
+      "fechas": "15 feb – 21 feb",
+      "startDate": "2027-02-15",
+      "endDate": "2027-02-21",
+      "km": 61.2,
+      "dias": [
+        {
+          "dia": "Lun",
+          "fecha": "15 feb",
+          "isoDate": "2027-02-15",
+          "sesion": "F 5 + activación (2×10 fuerza ligera)"
+        },
+        {
+          "dia": "Mar",
+          "fecha": "16 feb",
+          "isoDate": "2027-02-16",
+          "sesion": "6: 3×1 km @6:10 rec 2'"
+        },
+        {
+          "dia": "Mié",
+          "fecha": "17 feb",
+          "isoDate": "2027-02-17",
+          "sesion": "F 4"
+        },
+        {
+          "dia": "Jue",
+          "fecha": "18 feb",
+          "isoDate": "2027-02-18",
+          "sesion": "F 4 + 4 strides"
+        },
+        {
+          "dia": "Vie",
+          "fecha": "19 feb",
+          "isoDate": "2027-02-19",
+          "sesion": "Descanso + movilidad"
+        },
+        {
+          "dia": "Sáb",
+          "fecha": "20 feb",
+          "isoDate": "2027-02-20",
+          "sesion": "**Libre (no se entrena)**"
+        },
+        {
+          "dia": "Dom",
+          "fecha": "21 feb",
+          "isoDate": "2027-02-21",
+          "sesion": "**MARATÓN CAF 42,195 km**"
+        }
+      ]
+    }
+  ],
+  "fuerzaEjercicios": {
+    "fuerza_a": [
+      {
+        "name": "Sentadilla Goblet con Mancuerna",
+        "meta": "3 series × 10 reps (bajada en 3s) · RPE 6–7 · 60s descanso",
+        "desc": "Sostén una mancuerna vertical pegada al pecho. Pies al ancho de hombros con puntas ligeramente hacia afuera. Espalda neutra, desciende la cadera controladamente en 3 segundos cuidando que las rodillas sigan la línea de los pies. Activa cuádriceps y glúteos.",
+        "link": "https://musclewiki.com/es-es/exercise/dumbbell-goblet-pulse-squat?model=f"
+      },
+      {
+        "name": "Peso Muerto Rumano con Mancuernas",
+        "meta": "3 series × 8–10 reps · RPE 7 · 60s descanso",
+        "desc": "Bisagra pura de cadera empujando los glúteos hacia atrás con rodillas semiflexionadas (sin doblarlas en sentadilla). Baja las mancuernas pegadas a los muslos hasta sentir el estiramiento en los isquiotibiales. Mantén la espalda totalmente recta.",
+        "link": "https://musclewiki.com/es-es/exercise/dumbbell-romanian-deadlift?model=f"
+      },
+      {
+        "name": "Zancada Inversa ➔ Sentadilla Búlgara Unilateral",
+        "meta": "3 series × 8 reps c/pierna · RPE 7 · 60s descanso",
+        "desc": "Da un paso atrás flexionando ambas rodillas a 90°, manteniendo el torso erguido. Empieza siempre con la pierna más débil. Desde sem. 6 eleva el empeine trasero en silla o banco (búlgara) con alineación estricta de rodilla para evitar oscilación hacia adentro.",
+        "link": "https://musclewiki.com/es-es/exercise/dumbbell-split-squat?model=f"
+      },
+      {
+        "name": "Step-down Excéntrico Lento (Bajada de escalón)",
+        "meta": "3 series × 8–10 reps c/pierna (bajada en 3–4s) · RPE 7 · 60s descanso",
+        "desc": "CLAVE VASTO MEDIAL Y BAJADAS: Sobre un escalón o caja baja, apóyate en una pierna y desciende el talón opuesto hacia el suelo en 3–4 segundos lentos sin que la rodilla de apoyo colapse en valgo (hacia adentro). Simula el impacto excéntrico de los -642m de desnivel de Caracas.",
+        "link": "https://musclewiki.com/es-es/exercise/bodyweight-step-down?model=f"
+      },
+      {
+        "name": "Elevación de Talones de Pie con Mancuerna",
+        "meta": "3 series × 12–15 reps · RPE 7 · 45s descanso",
+        "desc": "De pie sosteniendo mancuerna. Subida explosiva en 1 segundo y bajada controlada y lenta en 3 segundos. Desarrolla la rigidez del tendón de Aquiles y la propulsión elástica.",
+        "link": "https://musclewiki.com/es-es/exercise/standing-calf-raise?model=f"
+      }
+    ],
+    "fuerza_b": [
+      {
+        "name": "Puente de Copenhague (o Glute Bridge con compresión)",
+        "meta": "3 series × 20–30s por lado (o 12 reps con balón) · RPE 7 · 45s descanso",
+        "desc": "BLINDAJE DIRECTO ADUCTOR DERECHO: En plancha lateral con la pierna superior apoyada sobre una silla/banco y la inferior suspendida (Copenhague), o tumbado boca arriba en puente de glúteos apretando fuertemente un cojín/balón entre las rodillas. Fortalece la cara interna del muslo para erradicar el calambre del km 30.",
+        "link": "https://musclewiki.com/es-es/exercise/adductor-leg-raise-side-lying-isometric?model=f"
+      },
+      {
+        "name": "Caminata Lateral con Banda Elástica",
+        "meta": "3 series × 12 pasos por lado · RPE 6 · 45s descanso",
+        "desc": "Coloca la banda elástica justo por encima de las rodillas (o en tobillos). En semi-sentadilla, da pasos laterales controlados manteniendo la tensión constante en el glúteo medio para estabilizar la pelvis y evitar el colapso medial.",
+        "link": "https://musclewiki.com/es-es/exercise/side-walks-resisted?model=f"
+      },
+      {
+        "name": "Plancha Frontal de Antebrazos",
+        "meta": "3 series × 35–45 seg · RPE 7 · 45s descanso",
+        "desc": "Apoyo en antebrazos y puntas de los pies. Contrae abdomen, glúteos y cuádriceps formando una línea recta desde la cabeza hasta los talones. Respira profundamente sin dejar caer la pelvis.",
+        "link": "https://musclewiki.com/es-es/exercise/forearm-plank?model=f"
+      },
+      {
+        "name": "Dead Bug / Bicho Muerto",
+        "meta": "3 series × 10 reps por lado · RPE 6 · 45s descanso",
+        "desc": "Boca arriba con brazos hacia el techo y rodillas a 90°. Presiona la espalda baja firmemente contra el suelo. Extiende simultáneamente el brazo derecho y la pierna izquierda sin despegar la zona lumbar.",
+        "link": "https://musclewiki.com/es-es/exercise/dead-bug?model=f"
+      },
+      {
+        "name": "Elevación de Talones Sentado / Rodilla Flexionada (Sóleo)",
+        "meta": "3 series × 15 reps · RPE 7 · 45s descanso",
+        "desc": "Sentado con rodillas a 90° y mancuernas apoyadas sobre los muslos cerca de la rodilla. Eleva los talones contrayendo el sóleo. Al tener la rodilla flexionada el gemelo se desactiva y el sóleo asume toda la carga de absorción de impacto.",
+        "link": "https://musclewiki.com/es-es/exercise/plantar-flexions-seated-resisted?model=f"
+      }
+    ]
+  }
+}
