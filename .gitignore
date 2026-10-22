@@ -1,9 +1,8 @@
 # Ignorar todo por defecto en git
 *
 
-# Permitir unicamente archivos y carpetas web necesarios
+# Permitir unicamente index.html y .gitignore
 !index.html
-!calendario.html
 !.gitignore
 
 # Archivos de entorno y credenciales (redundancia de seguridad)
