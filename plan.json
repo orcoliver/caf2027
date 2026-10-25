@@ -1,10 +1,10 @@
 {
   "version": "2.2",
-  "updatedAt": "2026-10-22",
+  "updatedAt": "2026-10-25",
   "raceDate": "2027-02-21",
   "targetPace": "6:10",
   "targetTime": "4:20:12",
-  "totalKm": 923.5,
+  "totalKm": 924.4,
   "maxLongRunKm": 35,
   "weeks": [
     {
@@ -116,41 +116,41 @@
     {
       "num": 3,
       "fase": "Base",
-      "nota": "Primer toque de ritmo. Escalonamiento orgánico tras los 11,7 km sin fatiga de la semana 2.",
+      "nota": "Primer toque de ritmo. Completada al 100 % (carrera + fuerza): 36,9 km (Oliver) / 37,0 km (Beatriz). Tirada 14,2 km @ 7:07/km juntos.",
       "fechas": "19 oct – 25 oct",
       "startDate": "2026-10-19",
       "endDate": "2026-10-25",
-      "km": 36,
+      "km": 36.9,
       "dias": [
         {
           "dia": "Lun",
           "fecha": "19 oct",
           "isoDate": "2026-10-19",
-          "sesion": "F 5"
+          "sesion": "F 5,2 ✔"
         },
         {
           "dia": "Mar",
           "fecha": "20 oct",
           "isoDate": "2026-10-20",
-          "sesion": "Fartlek 6×1' @5:30–5:40 / 1' trote (6)"
+          "sesion": "Fartlek 6×1' @5:30–5:40 / 1' trote (6) ✔"
         },
         {
           "dia": "Mié",
           "fecha": "21 oct",
           "isoDate": "2026-10-21",
-          "sesion": "F 4 + Fuerza A"
+          "sesion": "F 4,4 + Fuerza A ✔"
         },
         {
           "dia": "Jue",
           "fecha": "22 oct",
           "isoDate": "2026-10-22",
-          "sesion": "F 7"
+          "sesion": "F 7 ✔"
         },
         {
           "dia": "Vie",
           "fecha": "23 oct",
           "isoDate": "2026-10-23",
-          "sesion": "Fuerza B"
+          "sesion": "Fuerza B ✔"
         },
         {
           "dia": "Sáb",
@@ -162,7 +162,7 @@
           "dia": "Dom",
           "fecha": "25 oct",
           "isoDate": "2026-10-25",
-          "sesion": "L 14 fácil"
+          "sesion": "L 14,2 fácil ✔"
         }
       ]
     },
