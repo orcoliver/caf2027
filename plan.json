@@ -1,10 +1,10 @@
 {
   "version": "2.2",
-  "updatedAt": "2026-10-25",
+  "updatedAt": "2026-11-01",
   "raceDate": "2027-02-21",
   "targetPace": "6:10",
   "targetTime": "4:20:12",
-  "totalKm": 924.4,
+  "totalKm": 926.3,
   "maxLongRunKm": 35,
   "weeks": [
     {
@@ -169,41 +169,41 @@
     {
       "num": 4,
       "fase": "Base · DESCARGA",
-      "nota": "Semana de descarga para asimilar las primeras 3 semanas.",
+      "nota": "Semana de descarga completada al 100 % (carrera + fuerza): 32,9 km (Oliver) / 33,7 km (Beatriz). Tirada 12 km @ 6:45/km juntos. VO2 máx sube a 45 (Oliver) y 50 (Beatriz).",
       "fechas": "26 oct – 1 nov",
       "startDate": "2026-10-26",
       "endDate": "2026-11-01",
-      "km": 31,
+      "km": 32.9,
       "dias": [
         {
           "dia": "Lun",
           "fecha": "26 oct",
           "isoDate": "2026-10-26",
-          "sesion": "F 4"
+          "sesion": "F 4,3 ✔"
         },
         {
           "dia": "Mar",
           "fecha": "27 oct",
           "isoDate": "2026-10-27",
-          "sesion": "F 6 + 6 strides"
+          "sesion": "F 7,3 (6 + 6 strides) ✔"
         },
         {
           "dia": "Mié",
           "fecha": "28 oct",
           "isoDate": "2026-10-28",
-          "sesion": "F 4 + Fuerza A"
+          "sesion": "F 4 + Fuerza A ✔"
         },
         {
           "dia": "Jue",
           "fecha": "29 oct",
           "isoDate": "2026-10-29",
-          "sesion": "F 5"
+          "sesion": "F 5,2 ✔"
         },
         {
           "dia": "Vie",
           "fecha": "30 oct",
           "isoDate": "2026-10-30",
-          "sesion": "Fuerza B"
+          "sesion": "Fuerza B ✔"
         },
         {
           "dia": "Sáb",
@@ -215,7 +215,7 @@
           "dia": "Dom",
           "fecha": "1 nov",
           "isoDate": "2026-11-01",
-          "sesion": "L 12 fácil"
+          "sesion": "L 12 fácil ✔"
         }
       ]
     },
