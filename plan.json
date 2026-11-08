@@ -1,10 +1,10 @@
 {
   "version": "2.2",
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-08",
   "raceDate": "2027-02-21",
   "targetPace": "6:10",
   "targetTime": "4:20:12",
-  "totalKm": 926.3,
+  "totalKm": 926.8,
   "maxLongRunKm": 35,
   "weeks": [
     {
@@ -222,41 +222,41 @@
     {
       "num": 5,
       "fase": "Base",
-      "nota": "Primera pista y progresivo aeróbico.",
+      "nota": "Primera pista y progresivo aeróbico. Completada al 100 % de carrera: 40,5 km (Oliver) / 40,6 km (Beatriz). Tirada 16,1 km @ 6:41/km con últimos 6 km @ 6:15–6:24/km en Z3 baja.",
       "fechas": "2 nov – 8 nov",
       "startDate": "2026-11-02",
       "endDate": "2026-11-08",
-      "km": 40,
+      "km": 40.5,
       "dias": [
         {
           "dia": "Lun",
           "fecha": "2 nov",
           "isoDate": "2026-11-02",
-          "sesion": "F 5"
+          "sesion": "F 5,2 ✔"
         },
         {
           "dia": "Mar",
           "fecha": "3 nov",
           "isoDate": "2026-11-03",
-          "sesion": "Pista 6×400 m @5:10 rec 200 m trote (7)"
+          "sesion": "Pista 6×400 m @5:10 rec 200 m trote (7,1) ✔"
         },
         {
           "dia": "Mié",
           "fecha": "4 nov",
           "isoDate": "2026-11-04",
-          "sesion": "F 4 + Fuerza A"
+          "sesion": "F 4 + Fuerza A ✔"
         },
         {
           "dia": "Jue",
           "fecha": "5 nov",
           "isoDate": "2026-11-05",
-          "sesion": "Progresivo 8: 5 F + 3 @6:30"
+          "sesion": "Progresivo 8,1: 5 F + 3 @5:50 ✔"
         },
         {
           "dia": "Vie",
           "fecha": "6 nov",
           "isoDate": "2026-11-06",
-          "sesion": "Fuerza B"
+          "sesion": "Fuerza B (pendiente conf.)"
         },
         {
           "dia": "Sáb",
@@ -268,7 +268,7 @@
           "dia": "Dom",
           "fecha": "8 nov",
           "isoDate": "2026-11-08",
-          "sesion": "L 16 fácil"
+          "sesion": "L 16,1 fácil ✔"
         }
       ]
     },
