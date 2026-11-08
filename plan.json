@@ -222,7 +222,7 @@
     {
       "num": 5,
       "fase": "Base",
-      "nota": "Primera pista y progresivo aeróbico. Completada al 100 % de carrera: 40,5 km (Oliver) / 40,6 km (Beatriz). Tirada 16,1 km @ 6:41/km con últimos 6 km @ 6:15–6:24/km en Z3 baja.",
+      "nota": "Primera pista y progresivo aeróbico. Completada al 100 % de carrera: 40,5 km (Oliver) / 40,6 km (Beatriz). Tirada 16,1 km @ 6:41/km con últimos 6 km @ 6:15–6:24/km (prueba de gel y agua ok). Fuerza B omitida.",
       "fechas": "2 nov – 8 nov",
       "startDate": "2026-11-02",
       "endDate": "2026-11-08",
@@ -256,7 +256,7 @@
           "dia": "Vie",
           "fecha": "6 nov",
           "isoDate": "2026-11-06",
-          "sesion": "Fuerza B (pendiente conf.)"
+          "sesion": "Fuerza B (omitida)"
         },
         {
           "dia": "Sáb",
