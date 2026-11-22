@@ -1,10 +1,10 @@
 {
   "version": "2.2",
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-22",
   "raceDate": "2027-02-21",
   "targetPace": "6:10",
   "targetTime": "4:20:12",
-  "totalKm": 926.8,
+  "totalKm": 928.1,
   "maxLongRunKm": 35,
   "weeks": [
     {
@@ -275,41 +275,41 @@
     {
       "num": 6,
       "fase": "Desarrollo",
-      "nota": "Inicio de fuerza máxima, umbral y control técnico de bajadas en tirada larga.",
+      "nota": "Inicio de fuerza máxima, umbral y control técnico de bajadas. Completada al 100 %: 43,9 km (Oliver) / 44,9 km (Beatriz) + 2 Fuerzas. Tirada 18 km @ 6:41/km con últimos 3 km @ 6:00–6:11/km y zancada ≤1,00 m.",
       "fechas": "9 nov – 15 nov",
       "startDate": "2026-11-09",
       "endDate": "2026-11-15",
-      "km": 43,
+      "km": 43.9,
       "dias": [
         {
           "dia": "Lun",
           "fecha": "9 nov",
           "isoDate": "2026-11-09",
-          "sesion": "F 5"
+          "sesion": "F 5,3 ✔"
         },
         {
           "dia": "Mar",
           "fecha": "10 nov",
           "isoDate": "2026-11-10",
-          "sesion": "Umbral 2×10' @5:45 rec 3' (8)"
+          "sesion": "Umbral 2×10' @5:28/5:11 rec 3' (8,6) ✔"
         },
         {
           "dia": "Mié",
           "fecha": "11 nov",
           "isoDate": "2026-11-11",
-          "sesion": "F 4 + Fuerza A"
+          "sesion": "F 4 + Fuerza A ✔"
         },
         {
           "dia": "Jue",
           "fecha": "12 nov",
           "isoDate": "2026-11-12",
-          "sesion": "M 8 con 4 km @6:20"
+          "sesion": "M 8 con 4 km @6:04 ✔"
         },
         {
           "dia": "Vie",
           "fecha": "13 nov",
           "isoDate": "2026-11-13",
-          "sesion": "Fuerza B"
+          "sesion": "Fuerza B (movida al sáb.) ✔"
         },
         {
           "dia": "Sáb",
@@ -321,48 +321,48 @@
           "dia": "Dom",
           "fecha": "15 nov",
           "isoDate": "2026-11-15",
-          "sesion": "L 18 (últimos 3 km @6:20 · control bajadas)"
+          "sesion": "L 18,0 (15 F + 3 km @6:05 · control bajadas) ✔"
         }
       ]
     },
     {
       "num": 7,
       "fase": "Desarrollo",
-      "nota": "Primer fondo de 20 km en noviembre (igualando progresión 2025 con mejor base muscular).",
+      "nota": "Primer fondo de 20 km en noviembre. Completada al 100 %: 48,4 km (Oliver) / 48,8 km (Beatriz) + 2 Fuerzas. Tirada 20 km @ 6:51/km (6:46 en mov.) con 4 km MP @ 5:53/km (5:42/km en mov.) pese a tos/congestión.",
       "fechas": "16 nov – 22 nov",
       "startDate": "2026-11-16",
       "endDate": "2026-11-22",
-      "km": 48,
+      "km": 48.4,
       "dias": [
         {
           "dia": "Lun",
           "fecha": "16 nov",
           "isoDate": "2026-11-16",
-          "sesion": "F 5"
+          "sesion": "F 5 ✔"
         },
         {
           "dia": "Mar",
           "fecha": "17 nov",
           "isoDate": "2026-11-17",
-          "sesion": "Pista 5×800 m @5:15 rec 400 m (9)"
+          "sesion": "Pista 5×800 m @4:52 rec 400 m (9,3) ✔"
         },
         {
           "dia": "Mié",
           "fecha": "18 nov",
           "isoDate": "2026-11-18",
-          "sesion": "F 5 + Fuerza A"
+          "sesion": "F 5 + Fuerza A ✔"
         },
         {
           "dia": "Jue",
           "fecha": "19 nov",
           "isoDate": "2026-11-19",
-          "sesion": "MP 9: 5 F + 4 km @6:10"
+          "sesion": "MP 9: 5 F + 4 km @5:47 ✔"
         },
         {
           "dia": "Vie",
           "fecha": "20 nov",
           "isoDate": "2026-11-20",
-          "sesion": "Fuerza B"
+          "sesion": "Fuerza B ✔"
         },
         {
           "dia": "Sáb",
@@ -374,7 +374,7 @@
           "dia": "Dom",
           "fecha": "22 nov",
           "isoDate": "2026-11-22",
-          "sesion": "L 20: 14 F + 4 @6:10 + 2 F · control bajadas"
+          "sesion": "L 20: 14 F + 4 @5:53 + 2 F · control bajadas ✔"
         }
       ]
     },
@@ -1105,7 +1105,7 @@
       {
         "name": "Puente de Copenhague (o Glute Bridge con compresión)",
         "meta": "3 series × 20–30s por lado (o 12 reps con balón) · RPE 7 · 45s descanso",
-        "desc": "BLINDAJE DIRECTO ADUCTOR DERECHO: En plancha lateral con la pierna superior apoyada sobre una silla/banco y la inferior suspendida (Copenhague), o tumbado boca arriba en puente de glúteos apretando fuertemente un cojín/balón entre las rodillas. Fortalece la cara interna del muslo para erradicar el calambre del km 30.",
+        "desc": "BLINDAJE DIRECTO ADUCTORES Y CARA INTERNA: En plancha lateral con la pierna superior apoyada sobre una silla/banco y la inferior suspendida (Copenhague), o tumbado boca arriba en puente de glúteos apretando fuertemente un cojín/balón entre las rodillas. Fortalece la cara interna del muslo para erradicar el calambre del km 30.",
         "link": "https://musclewiki.com/es-es/exercise/adductor-leg-raise-side-lying-isometric?model=f"
       },
       {
